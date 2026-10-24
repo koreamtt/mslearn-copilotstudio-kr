@@ -387,8 +387,7 @@
 
 ## 문서 정보
 
-- 과정: `PL-7008`
-- 작성자: [우진환](https://github.com/313mlclub), [유승호](https://github.com/hahaysh)
+- 과정: `PL-7008` — Create agents in Microsoft Copilot Studio
 - 기관 및 프로그램: 한국 마이크로소프트 · Microsoft Technical Trainer · Enterprise Skills Initiative
 - 표지 표기: Worldwide Learning | Microsoft Technical Trainer
 
