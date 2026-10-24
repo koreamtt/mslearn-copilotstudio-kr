@@ -105,7 +105,7 @@ python .github\skills\mslearn-korean-localization\scripts\validate_translation.p
 
 <https://koreamtt.github.io/mslearn-copilotstudio-kr/>
 
-기존 개인 사이트의 Jekyll 테마와 `main` 브랜치 루트 게시 방식을 유지합니다. 홈페이지는 기존과 동일하게 별도 편집본인 `Instructions-kr/Labs2/`의 실습 6개를 표시합니다. 영문 원본과 대응하는 `Instructions-kr/Labs/` 번역은 그대로 보존합니다.
+Jekyll 테마를 사용하며 `main` 브랜치 루트에서 게시합니다. 홈페이지는 별도 편집본인 `Instructions-kr/Labs2/`의 실습 6개를 표시합니다. 영문 원본과 대응하는 번역은 `Instructions-kr/Labs/`에서 관리합니다.
 
 홈페이지에서 연결하는 실습 URL:
 
@@ -115,11 +115,10 @@ https://koreamtt.github.io/mslearn-copilotstudio-kr/Instructions-kr/Labs2/<lab>.
 
 원본 대응 번역도 `https://koreamtt.github.io/mslearn-copilotstudio-kr/Instructions-kr/Labs/<lab>.html`로 접근할 수 있습니다. 이 유지관리 문서는 실습 페이지가 아니므로 Jekyll 게시 대상에서 제외합니다.
 
-### 기존 검증 제한
+### 검증 제한
 
 - 전체 번역 검증은 `Labs2`의 별도 편집본을 영문 원본에 없는 추가 경로로 보고합니다.
-- `Labs/04-workflow-tools.md`에는 기존 인라인 코드 값 또는 순서 불일치가 보고됩니다.
-- 위 항목은 Pages 설정 변경 전에도 존재하며, 게시 설정을 정리하면서 번역 기준 커밋이나 실습 내용을 변경하지 않습니다.
+- `Labs/04-workflow-tools.md`에는 인라인 코드 값 또는 순서 불일치가 보고됩니다.
 
 ## 알려진 원문 문제
 
