@@ -1,12 +1,18 @@
 remote_theme: MicrosoftLearning/Jekyll-Theme
+title: Microsoft Copilot Studio 한국어 실습
+description: PL-7008 Microsoft Copilot Studio 한국어 실습 가이드
+url: https://koreamtt.github.io
+baseurl: /mslearn-copilotstudio-kr
+repository: koreamtt/mslearn-copilotstudio-kr
 exclude:
   - readme.md
   - .github/
+  - Instructions-kr/README.md
 header_pages:
   - index.html
 author: Microsoft Learning
 twitter_username: mslearning
-github_username:  MicrosoftLearning
+github_username: koreamtt
 plugins:
   - jekyll-sitemap
   - jekyll-mentions
