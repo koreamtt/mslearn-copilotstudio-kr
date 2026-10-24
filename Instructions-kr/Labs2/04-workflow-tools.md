@@ -51,7 +51,9 @@
 
 이 실습에서는 Microsoft Teams에 메시지를 보내는 워크플로를 만듭니다. 그런 다음 이 워크플로를 에이전트에 추가합니다.
 
-### TASK 01. Teams에 메시지 보내기 워크플로 만들기
+<a id="task-01-teams에-메시지-보내기-워크플로-만들기"></a>
+
+### E02.TASK 01. Teams에 메시지 보내기 워크플로 만들기
 
 1. Copilot Studio의 내비게이션 메뉴에서 `도구` 탭으로 이동한 후 `+ 새로운 도구`를 클릭합니다.
 
@@ -74,7 +76,9 @@
 
     ![흐름 세부 정보에서 Teams로 요약 전송 이름과 메시지 게시 설명 입력](./images/04-workflow-tools/exercise-02-task-01-step-04-name-teams-summary-flow.png)
 
-### TASK 02. Teams에 게시 작업 만들기
+<a id="task-02-teams에-게시-작업-만들기"></a>
+
+### E02.TASK 02. Teams에 게시 작업 만들기
 
 1. `Teams로 요약 전송` 흐름의 `디자이너` 탭으로 이동합니다. `레이아웃 모드 전환` 아이콘을 클릭하여 캔버스 디자인을 변경합니다.
 
@@ -117,7 +121,9 @@
 
     ![PostMessageToTeams에서 흐름 봇, Contoso 팀, General 채널과 TaskSummary 메시지 설정](./images/04-workflow-tools/exercise-02-task-02-step-05-configure-postmessagetoteams.png)
 
-### TASK 03. 응답 작업 구성
+<a id="task-03-응답-작업-구성"></a>
+
+### E02.TASK 03. 응답 작업 구성
 
 1. 디자이너 캔버스에서 `Respond to the agent` 단계를 선택합니다. 해당 창의 `매개 변수` 탭에서 `+ 출력 추가`를 클릭합니다.
 
@@ -157,7 +163,9 @@
 
     ![Teams 온라인의 Contoso 팀 일반 채널에서 흐름 테스트 메시지 확인](./images/04-workflow-tools/exercise-02-task-03-step-07-verify-test-message-in-teams.png)
 
-### TASK 04. 에이전트에 워크플로를 도구로 추가
+<a id="task-04-에이전트에-워크플로를-도구로-추가"></a>
+
+### E02.TASK 04. 에이전트에 워크플로를 도구로 추가
 
 1. Copilot Studio 내비게이션 메뉴에서 `에이전트`로 이동한 후 `작업 우선순위 분석 에이전트`를 선택합니다.
 
@@ -195,7 +203,9 @@
 
     ![Teams 요약 전송 도구의 AI 동적 입력과 생성형 AI 응답 작성 옵션 설정](./images/04-workflow-tools/exercise-02-task-04-step-05-configure-ai-input-and-completion.png)
 
-### TASK 05. 에이전트 지침 업데이트
+<a id="task-05-에이전트-지침-업데이트"></a>
+
+### E02.TASK 05. 에이전트 지침 업데이트
 
 Copilot이 에이전트를 만들 때 생성하는 지침은 일정하지 않으며, 일반적으로 길게 작성됩니다. 이러한 지침 때문에 에이전트가 토픽과 도구를 호출하는 대신 지식에서 답변하거나 사용자에게 작업 목록을 요청할 수 있습니다. 이 작업에서는 생성된 지침을 구체적인 지침 세트로 바꾸어 남은 실습에서 에이전트가 예측 가능하게 동작하도록 합니다.
 
@@ -233,7 +243,9 @@ Copilot이 에이전트를 만들 때 생성하는 지침은 일정하지 않으
 
     ![기술과 단계별 지침에 실제 Teams 도구 참조가 삽입된 상태를 저장](./images/04-workflow-tools/exercise-02-task-05-step-04-save-instruction-tool-references.png)
 
-### TASK 06. 에이전트에서 워크플로 도구 테스트
+<a id="task-06-에이전트에서-워크플로-도구-테스트"></a>
+
+### E02.TASK 06. 에이전트에서 워크플로 도구 테스트
 
 1. 에이전트의 메뉴에서 `테스트`를 선택한 후 새 테스트 세션을 시작하고 다음 프롬프트를 입력합니다. Microsoft Teams 연결 메시지가 표시되면 실습 계정으로 Teams에 로그인합니다.
 
@@ -255,7 +267,9 @@ Copilot이 에이전트를 만들 때 생성하는 지침은 일정하지 않으
 
 이 실습에서는 Copilot을 사용하여 설명으로 토픽을 만들고, Excel 파일의 작업을 분석하는 워크플로 도구를 만든 다음, 토픽에서 도구를 호출합니다.
 
-### TASK 01. EXCEL 파일 만들기
+<a id="task-01-excel-파일-만들기"></a>
+
+### E03.TASK 01. EXCEL 파일 만들기
 
 1. Copilot Studio의 왼쪽 상단에서 앱 시작 관리자 아이콘을 클릭한 후 `OneDrive`를 선택합니다.
 
@@ -295,7 +309,9 @@ Copilot이 에이전트를 만들 때 생성하는 지침은 일정하지 않으
 
     ![OneDrive My files에서 Operations Tasks.xlsx 파일이 저장된 상태 확인](./images/04-workflow-tools/exercise-03-task-01-step-07-verify-workbook-in-onedrive.png)
 
-### TASK 02. Excel 작업 분석 워크플로 만들기
+<a id="task-02-excel-작업-분석-워크플로-만들기"></a>
+
+### E03.TASK 02. Excel 작업 분석 워크플로 만들기
 
 1. Copilot Studio의 내비게이션 메뉴에서 `도구` 탭으로 이동한 후 `+ 새로운 도구`를 클릭합니다.
 
@@ -384,7 +400,9 @@ Copilot이 에이전트를 만들 때 생성하는 지침은 일정하지 않으
 
     ![ListTaskRows 원시 출력의 body에서 높음 우선순위 작업 행이 반환된 결과 확인](./images/04-workflow-tools/exercise-03-task-02-step-15-verify-high-priority-result-rows.png)
 
-### TASK 03. 에이전트에 토픽 추가
+<a id="task-03-에이전트에-토픽-추가"></a>
+
+### E03.TASK 03. 에이전트에 토픽 추가
 
 1. Copilot Studio의 내비게이션 메뉴에서 `에이전트` 탭으로 이동한 후 `작업 우선순위 분석 에이전트`를 선택합니다.
 
@@ -407,7 +425,9 @@ Copilot이 에이전트를 만들 때 생성하는 지침은 일정하지 않으
 
     ![우선순위 질문 노드의 변수 속성에서 모든 토픽이 액세스할 수 있는 전역 사용량 설정](./images/04-workflow-tools/exercise-03-task-03-step-04-set-question-variable-global.png)
 
-### TASK 04. 워크플로를 도구로 추가
+<a id="task-04-워크플로를-도구로-추가"></a>
+
+### E03.TASK 04. 워크플로를 도구로 추가
 
 1. 에이전트의 `도구` 탭으로 이동한 후 `+ 도구 추가`를 클릭합니다.
 
@@ -443,7 +463,9 @@ Copilot이 에이전트를 만들 때 생성하는 지침은 일정하지 않으
 
     ![작업 목록 가져오기 도구의 완료 탭에서 생성형 AI로 응답 작성 선택 후 저장](./images/04-workflow-tools/exercise-03-task-04-step-05-configure-generative-tool-completion.png)
 
-### TASK 05. 워크플로 도구를 토픽에 추가
+<a id="task-05-워크플로-도구를-토픽에-추가"></a>
+
+### E03.TASK 05. 워크플로 도구를 토픽에 추가
 
 1. 에이전트의 `토픽` 탭으로 이동한 후 `우선순위 작업` 토픽을 선택합니다.
 
@@ -453,7 +475,9 @@ Copilot이 에이전트를 만들 때 생성하는 지침은 일정하지 않으
 
     ![우선순위 질문 노드 아래에 작업 목록 가져오기 도구를 추가하여 토픽에 연결](./images/04-workflow-tools/exercise-03-task-05-step-02-add-task-list-tool-after-question.png)
 
-### TASK 06. 토픽을 사용하도록 에이전트 지침 업데이트
+<a id="task-06-토픽을-사용하도록-에이전트-지침-업데이트"></a>
+
+### E03.TASK 06. 토픽을 사용하도록 에이전트 지침 업데이트
 
 1. 에이전트의 `개요` 탭으로 이동한 후 `지침` 영역의 `편집`을 클릭합니다.
 
@@ -475,7 +499,9 @@ Copilot이 에이전트를 만들 때 생성하는 지침은 일정하지 않으
 
     ![단계별 지침의 작업 분석 아래에 우선순위 작업 토픽으로 작업 목록을 가져오는 지침 추가 후 저장](./images/04-workflow-tools/exercise-03-task-06-step-03-add-task-analysis-topic-step.png)
 
-### TASK 07. 워크플로 도구 테스트
+<a id="task-07-워크플로-도구-테스트"></a>
+
+### E03.TASK 07. 워크플로 도구 테스트
 
 1. 에이전트 메뉴에서 `테스트`를 클릭합니다. `에이전트 테스트` 창에서 `…`을 클릭한 후 아래와 같이 설정합니다.
 

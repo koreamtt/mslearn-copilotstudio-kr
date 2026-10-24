@@ -23,7 +23,9 @@
 
 이 실습에서는 템플릿을 사용하여 에이전트를 만들고 테스트합니다.
 
-### TASK 01. 안전한 이동(Safe Travels) 템플릿으로 에이전트 만들기
+<a id="task-01-안전한-이동safe-travels-템플릿으로-에이전트-만들기"></a>
+
+### E01.TASK 01. 안전한 이동(Safe Travels) 템플릿으로 에이전트 만들기
 
 브라우저에서 새 탭을 열고 [Microsoft Copilot Studio](https://copilotstudio.microsoft.com)에 접속하여 실습 계정으로 로그인합니다.
 
@@ -82,7 +84,9 @@ https://copilotstudio.microsoft.com
 
     ![Conversation Start 우측 드롭 다운 메뉴에서 What Can I Ask 토픽으로 이동하는 위치](./images/01-create-agents/exercise-01-task-01-step-11-topic-switch-menu.png)
 
-### TASK 02. 에이전트 테스트
+<a id="task-02-에이전트-테스트"></a>
+
+### E01.TASK 02. 에이전트 테스트
 
 1. `안전한 여행` 에이전트의 우측 상단에서 `테스트`를 클릭합니다. `에이전트 테스트` 창에서 `… > 토픽 간 추적` 옵션을 사용하도록 설정합니다.
 
@@ -124,7 +128,9 @@ https://copilotstudio.microsoft.com
 
 이 실습에서는 자연어를 사용하여 정부 복지 혜택과 관련된 질문에 답변하는 새 에이전트를 만듭니다.
 
-### TASK 01. 정부 복지 혜택에 답변하는 에이전트 만들기
+<a id="task-01-정부-복지-혜택에-답변하는-에이전트-만들기"></a>
+
+### E02.TASK 01. 정부 복지 혜택에 답변하는 에이전트 만들기
 
 1. Copilot Studio 클래식 포털의 내비게이션 메뉴에서 `에이전트`로 이동한 후 자연어 입력창의 톱니바퀴 아이콘을 클릭합니다.
 
@@ -150,7 +156,9 @@ https://copilotstudio.microsoft.com
 
 4. 새 에이전트 프로비저닝이 완료될 때까지 기다립니다.
 
-### TASK 02. 개요 탭 구성
+<a id="task-02-개요-탭-구성"></a>
+
+### E02.TASK 02. 개요 탭 구성
 
 1. 새로 만든 에이전트의 `개요` 탭으로 이동한 후 `세부 정보` 영역에서 `편집`을 클릭합니다. 그런 다음 아래와 같이 구성하고 `저장`을 클릭합니다.
 
@@ -181,7 +189,9 @@ https://copilotstudio.microsoft.com
 
    ![추천 프롬프트에 건강 및 의료 제목과 지원 혜택 질문을 입력하고 저장하는 위치](./images/01-create-agents/exercise-02-task-02-step-03-health-suggested-prompt.png)
 
-### TASK 03. 공개 웹 사이트를 지식 소스로 추가
+<a id="task-03-공개-웹-사이트를-지식-소스로-추가"></a>
+
+### E02.TASK 03. 공개 웹 사이트를 지식 소스로 추가
 
 1. 에이전트의 `참조 자료` 탭으로 이동한 후 `+ 참조 자료 추가`를 클릭합니다.
 
@@ -227,7 +237,9 @@ https://copilotstudio.microsoft.com
 
 5. 공개 웹 사이트의 인덱싱에는 몇 분 정도 걸릴 수 있습니다. 참조 자료에 기반한 응답이 제공되지 않는 경우 몇 분 정도 기다린 후 에이전트를 다시 테스트할 수 있습니다.
 
-### TASK 04. 에이전트 설정
+<a id="task-04-에이전트-설정"></a>
+
+### E02.TASK 04. 에이전트 설정
 
 1. 에이전트 페이지의 메뉴에서 `설정`을 클릭합니다.
 
@@ -263,7 +275,9 @@ https://copilotstudio.microsoft.com
 
    ![에이전트의 인증 페이지에서 인증 없음 옵션을 선택하고 저장하는 위치](./images/01-create-agents/exercise-02-task-04-step-06-no-authentication-option.png)
 
-### TASK 05. 에이전트 테스트
+<a id="task-05-에이전트-테스트"></a>
+
+### E02.TASK 05. 에이전트 테스트
 
 1. `설정` 창을 닫고 메뉴에서 `테스트`를 클릭합니다. `에이전트 테스트` 창에서 `…`을 클릭한 후 다음과 같이 구성합니다.
 
@@ -282,7 +296,9 @@ https://copilotstudio.microsoft.com
 
    ![건강보험 지원 질문에 대한 응답과 활동 맵에서 사용된 지식 검색 및 참조 자료를 확인하는 결과](./images/01-create-agents/exercise-02-task-05-step-02-health-insurance-knowledge-answer.png)
 
-### TASK 06. 데모 웹 사이트에 에이전트 게시
+<a id="task-06-데모-웹-사이트에-에이전트-게시"></a>
+
+### E02.TASK 06. 데모 웹 사이트에 에이전트 게시
 
 1. 에이전트 페이지의 메뉴에서 `게시`를 클릭합니다.
 

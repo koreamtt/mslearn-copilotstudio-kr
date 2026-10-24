@@ -91,7 +91,9 @@
 
 ## EXERCISE 03. 에이전트에 지식 추가
 
-### TASK 01. 문서를 지식 소스로 추가
+<a id="task-01-문서를-지식-소스로-추가"></a>
+
+### E03.TASK 01. 문서를 지식 소스로 추가
 
 1. 브라우저에서 새 탭을 열고 [https://raw.githubusercontent.com/313mlclub/pl-7008/refs/heads/main/Expenses_Policy_v2_KO.docx](https://raw.githubusercontent.com/313mlclub/pl-7008/refs/heads/main/Expenses_Policy_v2_KO.docx) 경로로 이동하여 경비 정책 문서를 로컬 컴퓨터에 다운로드합니다. 이 문서에는 가상 기업의 경비 정책에 대한 세부 정보가 포함되어 있습니다.
 
@@ -105,7 +107,9 @@
 
 4. 파일을 업로드하면 Copilot Studio가 파일에 대한 인덱싱을 시작합니다. 이 작업에는 **10분 이상** 소요될 수 있습니다. 인덱싱 작업을 기다릴 필요 없이 다음 작업을 진행할 수 있습니다.
 
-### TASK 02. 공개 웹 사이트를 참자 자료 소스로 추가
+<a id="task-02-공개-웹-사이트를-참자-자료-소스로-추가"></a>
+
+### E03.TASK 02. 공개 웹 사이트를 참자 자료 소스로 추가
 
 1. 에이전트의 `참조 자료` 탭에서 `+ 참조 자료 추가`를 클릭합니다.
 
@@ -130,7 +134,9 @@
 
 4. 공개 웹 사이트의 인덱싱에도 몇 분이 걸릴 수 있습니다.
 
-### TASK 03. Dataverse 테이블을 지식 소스로 추가
+<a id="task-03-dataverse-테이블을-지식-소스로-추가"></a>
+
+### E03.TASK 03. Dataverse 테이블을 지식 소스로 추가
 
 1. 에이전트의 `참조 자료` 탭에서 `+ 참조 자료 추가`를 클릭합니다.
 
@@ -144,7 +150,9 @@
 
    ![Dataverse 참조 자료 원본 창에서 앞서 생성한 경비청구 테이블을 선택한 상태](./images/03-knowledge/exercise-03-task-03-step-03-select-expense-table.png)
 
-### TASK 04. Dataverse 지식 소스 구성
+<a id="task-04-dataverse-지식-소스-구성"></a>
+
+### E03.TASK 04. Dataverse 지식 소스 구성
 
 1. 에이전트의 `참조 자료` 탭에서 앞서 추가했던 Dataverse 참조 자료를 선택한 후 `… > 편집`을 클릭합니다.
 
@@ -173,7 +181,9 @@
 
 6. 에이전트의 `참조 자료` 탭에서 모든 참조 자료의 상태가 `준비`로 표시될 때까지 기다립니다. 인덱싱이 진행 중이면 몇 분 정도 기다린 후 페이지를 새로 고쳐 다시 확인합니다.
 
-### TASK 05. 참조 자료 테스트
+<a id="task-05-참조-자료-테스트"></a>
+
+### E03.TASK 05. 참조 자료 테스트
 
 1. 에이전트의 메뉴에서 `테스트`를 클릭합니다. `에이전트 테스트` 창에서 `…`을 클릭한 후 다음 상태인지 확인합니다.
 
@@ -212,7 +222,9 @@
 
 이 실습에서는 에이전트와 생성형 답변 노드의 생성형 AI를 구성합니다.
 
-### TASK 01. 에이전트 지식 설정 구성
+<a id="task-01-에이전트-지식-설정-구성"></a>
+
+### E04.TASK 01. 에이전트 지식 설정 구성
 
 1. 에이전트의 메뉴에서 `설정`을 클릭합니다.
 
@@ -241,7 +253,9 @@
 
    ![다른 공개 웹 사이트 사용을 끈 후 부대 비용 한도 질문에 충분한 답변을 제공하지 못한 테스트 결과](./images/03-knowledge/exercise-04-task-01-step-04-restricted-website-answer.png)
 
-### TASK 02. 생성형 답변 노드 구성
+<a id="task-02-생성형-답변-노드-구성"></a>
+
+### E04.TASK 02. 생성형 답변 노드 구성
 
 1. 에이전트의 `토픽` 탭으로 이동한 후 `시스템` 토픽으로 필터링합니다. 그런 다음 `대화형 부스팅` 토픽을 클릭합니다.
 
@@ -269,7 +283,9 @@
 
    ![생성형 답변 노드의 웹 검색을 사용하여 현재 미국 달러와 한국 원의 환율 질문에 응답한 결과](./images/03-knowledge/exercise-04-task-02-step-04-exchange-rate-web-search-answer.png)
 
-### TASK 03. 대체(Fallback) 토픽
+<a id="task-03-대체fallback-토픽"></a>
+
+### E04.TASK 03. 대체(Fallback) 토픽
 
 1. 에이전트의 `토픽` 메뉴로 이동한 후 `대화형 부스팅` 토픽을 선택합니다.
 
@@ -291,7 +307,9 @@
 
 이 실습에서는 에이전트가 Microsoft Entra ID 인증을 사용하도록 설정되어 있는지 확인한 후 에이전트를 Microsoft Teams에 게시합니다.
 
-### TASK 01. Microsoft Entra ID 인증
+<a id="task-01-microsoft-entra-id-인증"></a>
+
+### E05.TASK 01. Microsoft Entra ID 인증
 
 1. 에이전트의 메뉴에서 `설정`을 클릭합니다.
 
@@ -305,7 +323,9 @@
 
    ![에이전트의 인증 페이지에서 Microsoft로 인증 옵션이 선택된 상태](./images/03-knowledge/exercise-05-task-01-step-03-microsoft-authentication-option.png)
 
-### TASK 02. 에이전트 게시
+<a id="task-02-에이전트-게시"></a>
+
+### E05.TASK 02. 에이전트 게시
 
 1. 에이전트의 메뉴에서 `게시`를 클릭합니다.
 
@@ -315,7 +335,9 @@
 
    ![이 에이전트 게시 창에서 게시를 확정하는 버튼 위치](./images/03-knowledge/exercise-05-task-02-step-02-publish-agent-confirmation.png)
 
-### TASK 03. Microsoft Treams 채널
+<a id="task-03-microsoft-treams-채널"></a>
+
+### E05.TASK 03. Microsoft Treams 채널
 
 > [!NOTE]
 > 에이전트를 Teams에 게시하는 작업은 테스트를 위한 것입니다. 프로덕션 배포에는 추가 거버넌스, 보안 및 앱 승인 프로세스가 필요할 수 있습니다.
