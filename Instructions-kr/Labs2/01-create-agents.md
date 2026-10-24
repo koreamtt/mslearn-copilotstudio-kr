@@ -132,6 +132,31 @@ https://copilotstudio.microsoft.com
 
 ### E02.TASK 01. 정부 복지 혜택에 답변하는 에이전트 만들기
 
+> [!NOTE]
+> **자연어 입력창이나 톱니바퀴 아이콘이 보이지 않는 경우**
+>
+> 메뉴를 더 찾거나 환경 설정을 변경하지 말고, **아래 Copilot Studio 직접 생성 절차의 1~4단계를 건너뛰고 Agent Builder에서 만든 뒤 Copilot Studio로 복사**하여 실습을 이어갑니다.
+>
+> 먼저 새 탭에서 [Microsoft 365 Copilot](https://m365.cloud.microsoft/chat)에 접속하고, 같은 실습 계정으로 로그인합니다.
+>
+> ```text
+> https://m365.cloud.microsoft/chat
+> ```
+>
+> 1. 왼쪽 메뉴의 `새 에이전트`를 선택하여 Agent Builder를 엽니다.
+> 2. 아래 Copilot Studio 직접 생성 절차의 **3번에 있는 프롬프트**를 그대로 입력하여 정부 복지 혜택을 안내하는 **새 에이전트**를 만들고 저장합니다.
+> 3. 만든 에이전트의 **편집 화면**에서 오른쪽 위의 `… > Copilot Studio에 복사`를 선택합니다.
+> 4. 복사 대상 환경으로 앞에서 만든 실습 환경(`CopilotLabEnv` 또는 본인의 실습 환경 이름)을 선택합니다. 복사 후 열린 Copilot Studio 화면에서 필요한 생성·저장 절차를 완료합니다.
+> 5. Copilot Studio에서 복사된 에이전트를 열고, **[E02.TASK 02. 개요 탭 구성](#task-02-개요-탭-구성)**으로 이동합니다. 이후 실습은 Agent Builder의 원본이 아니라 **Copilot Studio에 복사된 에이전트**에서 진행합니다.
+>
+> 복사된 에이전트는 원본과 별개로 관리되며, 이후 원본을 수정해도 복사본에 자동으로 반영되지 않습니다. `Copilot Studio에 복사` 메뉴가 없거나 실습 환경을 선택할 수 없다면, 관리자에게 라이선스, Dataverse 사용 권한 및 해당 환경의 접근 권한을 확인합니다. 자세한 조건은 [Agent Builder에서 Copilot Studio로 에이전트 복사](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/copy-agent-to-copilot-studio)를 참조합니다.
+
+
+![alt text](image.png)
+
+
+자연어 입력창이 보이는 경우에는 다음 1~4단계로 Copilot Studio에서 직접 에이전트를 만듭니다.
+
 1. Copilot Studio 클래식 포털의 내비게이션 메뉴에서 `에이전트`로 이동한 후 자연어 입력창의 톱니바퀴 아이콘을 클릭합니다.
 
    ![Copilot Studio의 에이전트 페이지에서 자연어 입력창의 에이전트 설정 톱니바퀴 위치](./images/01-create-agents/exercise-02-task-01-step-01-natural-language-agent-settings.png)
@@ -169,7 +194,7 @@ https://copilotstudio.microsoft.com
 
    ![에이전트의 세부 정보에서 이름을 대한민국 복지 혜택 도우미로 변경하고 설명을 입력한 상태](./images/01-create-agents/exercise-02-task-02-step-01-agent-name-description.png)
 
-2. `개요` 탭의 `지침` 영역에서 자연어 설명을 기반으로 지침이 자동으로 생성된 것을 확인할 수 있습니다. `편집`을 클릭한 후 `## 일반 지침` 영역 제일 아래에 다음 지침을 추가하고 `저장`을 클릭합니다.
+2. `개요` 탭의 `지침` 영역에서 자연어 설명을 기반으로 지침이 자동으로 생성된 것을 확인할 수 있습니다. `편집`을 클릭한 후 `## 일반 지침` 영역 제일 아래에 다음 지침을 추가하고 `저장`을 클릭합니다. Agent Builder에서 복사한 에이전트 등에 해당 제목이 없는 경우에는 기존 지침의 마지막에 추가합니다.
 
    ```prompt
    - 법률 자문을 제공하지 마세요.
