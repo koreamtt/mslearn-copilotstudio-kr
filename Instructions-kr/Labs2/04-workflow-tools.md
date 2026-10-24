@@ -151,9 +151,9 @@
 
 7. 브라우저에서 새 탭을 열고 [Teams 온라인](https://teams.cloud.microsoft/)으로 이동합니다. `Contoso` 팀의 `일반` 채널로 이동하여 에이전트 흐름을 통해 게시된 메시지를 확인합니다.
 
-    ```text
-    https://teams.cloud.microsoft/
-    ```
+   ```text
+   https://teams.cloud.microsoft/
+   ```
 
     ![Teams 온라인의 Contoso 팀 일반 채널에서 흐름 테스트 메시지 확인](./images/04-workflow-tools/exercise-02-task-03-step-07-verify-test-message-in-teams.png)
 
@@ -245,9 +245,9 @@ Copilot이 에이전트를 만들 때 생성하는 지침은 일정하지 않으
 
 2. 브라우저에서 새 탭을 열고 [Microsoft Teams 온라인](https://teams.cloud.microsoft/)으로 이동합니다. `Contoso > 일반` 채널로 이동하여 에이전트 흐름을 통해 게시된 내용을 확인합니다.
 
-    ```text
-    https://teams.cloud.microsoft/
-    ```
+   ```text
+   https://teams.cloud.microsoft/
+   ```
 
     ![Teams의 Contoso 팀 일반 채널에 게시된 에이전트 작업 분석 요약 확인](./images/04-workflow-tools/exercise-02-task-06-step-02-verify-agent-summary-in-teams.png)
 
