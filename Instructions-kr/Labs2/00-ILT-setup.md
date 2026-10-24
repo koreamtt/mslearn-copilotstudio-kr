@@ -126,7 +126,7 @@
    https://m365.cloud.microsoft/chat
    ```
 
-   ![Microsoft 365 Copilot에서 새 에이전트를 선택하고 Agent Builder의 메시지 입력 영역을 여는 위치](./images/00-ILT-setup/exercise-00-task-04-step-01-agent-builder.png)
+   ![Microsoft 365 Copilot 왼쪽의 에이전트 메뉴에서 새 에이전트를 선택하는 위치](./images/00-ILT-setup/exercise-00-task-04-step-01-agent-builder.png)
 
 2. Agent Builder의 메시지 입력 영역에 다음 프롬프트를 입력하고 제출합니다. 이름, 설명, 지침의 초안이 생성되는지 확인합니다.
 
@@ -134,18 +134,17 @@
    Microsoft 교육 과정을 안내하는 Agent를 만들어줘.
    ```
 
-3. 같은 대화에서 다음 프롬프트를 입력하여 에이전트의 범위를 M365 교육 과정으로 조정합니다. `구성`에서 이름, 설명, 지침에 요청한 내용이 반영되는지 확인합니다.
+   ![Agent Builder에 교육 과정 안내 에이전트 생성 프롬프트를 입력하고 생성된 이름, 설명 및 안내 내용을 확인하는 화면](./images/00-ILT-setup/exercise-00-task-04-step-02-describe-agent.png)
+
+3. 같은 에이전트 대화에서 다음 프롬프트를 입력하여 에이전트의 범위를 M365 교육 과정으로 조정합니다. `구성`에서 이름, 설명, 지침에 요청한 내용이 반영되는지 확인합니다.
 
    ```prompt
    M365 전용 교육 과정으로 다듬어줘.
    ```
 
-   > [!NOTE]
-   > 일부 스크린샷은 Azure 교육 안내 에이전트 예시입니다. 이 실습에서는 발표자 노트의 입력값에 따라 M365 교육 과정으로 범위를 조정합니다. 자동으로 생성되는 이름, 설명, 지침은 화면 예시와 다를 수 있습니다.
+   ![Agent Builder의 대화로 M365 교육 과정에 맞게 에이전트의 이름과 설명을 조정한 화면](./images/00-ILT-setup/exercise-00-task-04-step-03-refine-agent.png)
 
-   ![Agent Builder의 대화로 에이전트 범위를 조정하고 구성에 반영되는 내용을 확인하는 화면. 스크린샷은 Azure 교육 과정 예시입니다.](./images/00-ILT-setup/exercise-00-task-04-step-03-refine-agent.png)
-
-4. 상단의 `사용해 보기`를 선택합니다. 제안된 프롬프트를 확인한 후 다음 질문을 입력하여, 에이전트를 만들기 전에 응답을 테스트합니다.
+4. 상단의 `미리보기`를 선택합니다. 제안된 프롬프트를 확인한 후 다음 질문을 입력하여, 에이전트를 만들기 전에 응답을 테스트합니다.
 
    ```prompt
    PL-7008 준비하려고 해. 현재 수준에 맞는 학습 순서를 간략하게 추천해줘.
@@ -153,23 +152,26 @@
 
    학습 순서에 대한 응답이 생성되는지 확인합니다. 답변의 내용이 설정한 교육 범위와 공식 교육 정보에 맞는지도 함께 검토합니다.
 
-   ![Agent Builder 상단에서 사용해 보기를 선택하여 만들기 전에 에이전트를 테스트하는 위치](./images/00-ILT-setup/exercise-00-task-04-step-04-try-agent.png)
+   ![Agent Builder 상단의 화면 선택 메뉴에서 미리보기를 선택하고 응답을 테스트하는 화면](./images/00-ILT-setup/exercise-00-task-04-step-04-preview-agent.png)
 
 5. 다시 `구성`으로 이동한 후 아래쪽으로 스크롤하여 다음 항목을 확인합니다.
 
    | 항목 | 확인 내용 |
    |---|---|
-   | 지식 | 에이전트가 참고할 원본과 웹 검색 범위를 설정하는 영역을 확인합니다. |
-   | 기능 | 문서, 차트 및 코드 만들기와 이미지 만들기 등 사용할 수 있는 기능을 확인합니다. |
+   | 기술 | `+ 추가`를 통해 에이전트를 전문화할 기술을 추가하는 영역을 확인합니다. |
+   | 지식 | `지식 추가` 또는 파일 끌어 놓기로 에이전트가 참고할 특정 지식 원본을 추가하는 영역을 확인합니다. |
+   | 지식 > 회사 콘텐츠 | `클라우드 파일`, `Outlook`, `Teams`, `Copilot 커넥터` 항목과 각 항목의 사용 여부를 확인합니다. |
    | 추천 프롬프트 | 사용자가 질문을 시작할 때 선택할 수 있는 예시 질문의 제목과 메시지를 확인합니다. |
 
-   ![Agent Builder의 구성에서 지식, 기능, 추천 프롬프트를 확인하는 영역](./images/00-ILT-setup/exercise-00-task-04-step-05-knowledge-capabilities-prompts.png)
+   이번 단계에서는 항목만 확인하며, 기술이나 지식을 추가하거나 회사 콘텐츠 설정을 변경하지 않습니다.
+
+   ![Agent Builder의 구성에서 기술, 지식, 회사 콘텐츠 및 추천 프롬프트를 확인하는 화면](./images/00-ILT-setup/exercise-00-task-04-step-05-configuration-sections.png)
 
 6. 오른쪽 위의 `만들기`를 클릭합니다. 에이전트를 만들었다는 안내가 표시되면 기본 공유 범위가 개인용인지 확인합니다.
 
-   ![에이전트를 만들었다는 안내에서 개인용 공유 범위와 에이전트로 이동 버튼을 확인하는 화면](./images/00-ILT-setup/exercise-00-task-04-step-06-create-agent.png)
+   ![에이전트 업데이트 완료 안내에서 개인용 공유 범위와 채팅 시작 버튼을 확인하는 화면](./images/00-ILT-setup/exercise-00-task-04-step-06-agent-confirmation.png)
 
-7. `에이전트로 이동`을 선택한 후, 다음 질문을 입력하여 만든 에이전트에서 응답을 확인합니다.
+7. `채팅 시작`을 선택한 후, 다음 질문을 입력하여 만든 에이전트에서 응답을 확인합니다.
 
    ```prompt
    PL-7008 과정 커리큘럼 알려줘.
@@ -182,6 +184,10 @@
    - 답변은 항상 5줄 이내로 작성해줘.
    ```
 
+   ![Microsoft 365 Copilot의 에이전트 메뉴에서 만든 에이전트의 더 보기 메뉴를 열고 편집을 선택하는 위치](./images/00-ILT-setup/exercise-00-task-04-step-08-edit-agent-menu.png)
+
+   ![Agent Builder의 안내에 경상도 사투리와 5줄 이내 응답 조건을 추가하고 업데이트 버튼을 확인하는 화면](./images/00-ILT-setup/exercise-00-task-04-step-08-response-instructions.png)
+
 9. 오른쪽 위의 `업데이트`를 클릭하여 변경한 지침을 적용합니다.
 
 10. 다시 에이전트를 사용하여 다음 질문을 입력합니다. 답변에 경상도 사투리가 사용되고, 답변이 5줄 이내로 작성되는지 확인합니다.
@@ -192,7 +198,7 @@
 
 11. 에이전트의 편집 화면으로 돌아갑니다. 오른쪽 위의 `…` 메뉴를 열고 `Copilot Studio에 복사` 항목을 확인합니다.
 
-    ![Agent Builder의 더 보기 메뉴에서 Copilot Studio에 복사 항목을 확인하는 위치](./images/00-ILT-setup/exercise-00-task-04-step-11-copy-to-copilot-studio-menu.png)
+    ![Agent Builder 편집 화면의 더 보기 메뉴에서 Copilot Studio에 복사 항목을 확인하는 위치](./images/00-ILT-setup/exercise-00-task-04-step-11-copy-to-copilot-studio-menu.png)
 
 ## 문서 정보
 
