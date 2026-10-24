@@ -19,9 +19,9 @@
 
    | 항목 | 값 |
    |---|---|
-   | `언어` | `한국어(대한민국)` |
-   | `통화` | `KRW (₩)` |
-   | `샘플 앱 및 데이터를 배포하시겠어요` | `아니요` |
+   | 언어 | `한국어(대한민국)` |
+   | 통화 | `KRW (₩)` |
+   | 샘플 앱 및 데이터를 배포하시겠어요 | `아니요` |
 
    ![기본 환경의 Dataverse 추가 창에서 한국어, KRW 통화 및 샘플 앱과 데이터 배포 안 함을 설정한 상태](./images/00-ILT-setup/exercise-00-task-01-step-03-default-environment-dataverse-settings.png)
 
@@ -33,14 +33,14 @@
 
    | 항목 | 값 |
    |---|---|
-   | `유형` | `개발자` |
-   | `매크로 지역 지리` | `아시아 태평양` |
-   | `이름` | `CopilotLabEnv` |
-   | `기본 설정 변경 > 환경 그룹` | `없음` |
-   | `기본 설정 변경 > 관리형 환경으로 설정` | `아니요` |
-   | `기본 설정 변경 > 대신 만들기` | `아니요` |
-   | `기본 설정 변경 > Dataverse 데이터 저장소를 추가하시겠습니까` | `예` |
-   | `기본 설정 변경 > Azure 종량제를 이용하시겠습니까` | `아니요` |
+   | 유형 | `개발자` |
+   | 매크로 지역 지리 | `아시아 태평양` |
+   | 이름 | `CopilotLabEnv` |
+   | 기본 설정 변경 > 환경 그룹 | `없음` |
+   | 기본 설정 변경 > 관리형 환경으로 설정 | `아니요` |
+   | 기본 설정 변경 > 대신 만들기 | `아니요` |
+   | 기본 설정 변경 > Dataverse 데이터 저장소를 추가하시겠습니까 | `예` |
+   | 기본 설정 변경 > Azure 종량제를 이용하시겠습니까 | `아니요` |
 
    ![새 환경 창에서 CopilotLabEnv의 개발자 유형, 아시아 태평양 지역 및 Dataverse 사용 등 기본 설정을 구성한 상태](./images/00-ILT-setup/exercise-00-task-01-step-05-developer-environment-settings.png)
 
@@ -48,9 +48,9 @@
 
    | 항목 | 값 |
    |---|---|
-   | `언어` | `한국어(대한민국)` |
-   | `통화` | `KRW (₩)` |
-   | `샘플 앱 및 데이터를 배포하시겠어요` | `아니요` |
+   | 언어 | `한국어(대한민국)` |
+   | 통화 | `KRW (₩)` |
+   | 샘플 앱 및 데이터를 배포하시겠어요 | `아니요` |
 
    ![새 개발자 환경의 Dataverse 추가 창에서 한국어, KRW 통화 및 샘플 앱과 데이터 배포 안 함을 설정한 상태](./images/00-ILT-setup/exercise-00-task-01-step-06-developer-environment-dataverse-settings.png)
 
@@ -87,9 +87,9 @@
 
    | 항목 | 값 또는 작업 |
    |---|---|
-   | `표시 이름` | `LabSolution` |
-   | `이름` | `LabSolution` |
-   | `게시자` | `+ 새 게시자`를 클릭합니다. |
+   | 표시 이름 | `LabSolution` |
+   | 이름 | `LabSolution` |
+   | 게시자 | `+ 새 게시자`를 클릭합니다. |
 
    ![새 솔루션 창에서 표시 이름과 이름에 LabSolution을 입력하고 새 게시자를 만드는 위치](./images/00-ILT-setup/exercise-00-task-03-step-03-solution-details-new-publisher.png)
 
@@ -97,10 +97,10 @@
 
    | 항목 | 값 |
    |---|---|
-   | `표시 이름` | `Fabrikam` |
-   | `이름` | `fabrikam` |
-   | `접두사` | `fab` |
-   | `선택 값 접두사` | 기본값을 사용합니다. |
+   | 표시 이름 | `Fabrikam` |
+   | 이름 | `fabrikam` |
+   | 접두사 | `fab` |
+   | 선택 값 접두사 | 기본값을 사용합니다. |
 
    ![새 게시자의 속성 탭에서 표시 이름 Fabrikam, 이름 fabrikam, 접두사 fab 및 기본 선택 값 접두사를 구성한 상태](./images/00-ILT-setup/exercise-00-task-03-step-04-publisher-properties.png)
 
