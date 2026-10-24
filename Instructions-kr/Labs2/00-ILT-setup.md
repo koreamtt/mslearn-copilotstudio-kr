@@ -9,7 +9,11 @@
 
 ## TASK 01. Power Platform 환경 만들기
 
-1. 브라우저를 열고 [https://admin.powerplatform.com](https://admin.powerplatform.com) 사이트에 실습 환경에서 제공하는 계정과 암호를 사용하여 액세스합니다.
+1. 브라우저를 열고 [Power Platform 관리 센터](https://admin.powerplatform.com)에 접속합니다. 실습 환경에서 제공하는 계정과 암호로 로그인합니다.
+
+   ```text
+   https://admin.powerplatform.com
+   ```
 
 2. 기본 환경에 Dataverse를 추가해야 합니다. `관리 > 환경`으로 이동한 후 `Contoso(기본)` 환경을 선택하고 `… > Dataverse 추가`를 클릭합니다.
 
@@ -63,7 +67,11 @@
 
 ## TASK 02. Copilot Studio의 표준 하네스 시작하기
 
-1. 브라우저에서 새 탭을 열고 [https://copilotstudio.microsoft.com](https://copilotstudio.microsoft.com) 사이트로 이동합니다.
+1. 브라우저에서 새 탭을 열고 [Microsoft Copilot Studio](https://copilotstudio.microsoft.com)로 이동합니다.
+
+   ```text
+   https://copilotstudio.microsoft.com
+   ```
 
 2. 새로운 Copilot Studio 환경이 표시되면 왼쪽 아래의 환경을 클릭한 후 `CopilotLabEnv` 환경을 선택합니다.
 

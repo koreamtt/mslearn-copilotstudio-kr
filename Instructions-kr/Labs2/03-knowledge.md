@@ -26,7 +26,11 @@
 
 ## EXERCISE 01. Dataverse에 테이블 만들기
 
-1. 브라우저에서 새 탭을 열고 Power Apps Maker 포털([https://make.powerapps.com/](https://make.powerapps.com/))로 이동합니다. 우측 상단의 `환경`을 클릭한 후 `CopilotLabEnv` 환경을 선택합니다.
+1. 브라우저에서 새 탭을 열고 [Power Apps Maker 포털](https://make.powerapps.com/)로 이동합니다. 우측 상단의 `환경`을 클릭한 후 `CopilotLabEnv` 환경을 선택합니다.
+
+   ```text
+   https://make.powerapps.com/
+   ```
 
    ![Power Apps Maker 포털의 우측 상단 환경 선택 메뉴에서 CopilotLabEnv 환경을 선택하는 위치](./images/03-knowledge/exercise-01-step-01-power-apps-select-environment.png)
 
@@ -111,7 +115,11 @@
 
    ![참조 자료 추가 창에서 공개 웹 사이트 원본 유형을 선택하는 위치](./images/03-knowledge/exercise-03-task-02-step-02-public-website-source-type.png)
 
-3. `공개 웹 사이트 추가` 창에서 [https://www.irs.gov/publications/p463](https://www.irs.gov/publications/p463) 주소를 입력한 후 `추가`를 클릭합니다. 그런 다음 아래 이름과 설명을 입력하고 `에이전트에 추가`를 클릭합니다.
+3. `공개 웹 사이트 추가` 창에서 다음 [미국 국세청 Publication 463 주소](https://www.irs.gov/publications/p463)를 복사해 입력한 후 `추가`를 클릭합니다. 그런 다음 아래 이름과 설명을 입력하고 `에이전트에 추가`를 클릭합니다.
+
+   ```text
+   https://www.irs.gov/publications/p463
+   ```
 
    | 항목 | 값 |
    |---|---|

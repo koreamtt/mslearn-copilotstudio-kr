@@ -53,7 +53,11 @@
 1. `홈` 탭으로 이동한 후 빌드 프롬프트 상자가 표시되는지 확인합니다.
 
     > [!NOTE]
-    > 일부 환경에서는 표준 URL을 통해 Copilot Studio에 액세스할 때 `홈` 탭에서 빌드 프롬프트 상자가 표시되지 않을 수 있습니다. 빌드 프롬프트 상자가 표시되지 않는다면 [https://copilotstudio.preview.microsoft.com/](https://copilotstudio.preview.microsoft.com/) 주소로 액세스합니다.
+    > 일부 환경에서는 표준 URL을 통해 Copilot Studio에 액세스할 때 `홈` 탭에서 빌드 프롬프트 상자가 표시되지 않을 수 있습니다. 빌드 프롬프트 상자가 표시되지 않는다면 [Copilot Studio 미리 보기](https://copilotstudio.preview.microsoft.com/)에 액세스합니다.
+
+    ```text
+    https://copilotstudio.preview.microsoft.com/
+    ```
 
     ![새로운 Copilot Studio 홈 탭에서 에이전트를 설명할 빌드 프롬프트 상자 위치 확인](./images/05-create-agent-new-experience/exercise-02-task-01-step-01-locate-home-build-prompt.png)
 
@@ -106,6 +110,10 @@
 
     지침에 포함된 포털: [셀프 서비스 비밀번호 재설정 포털](https://aka.ms/sspr).
 
+    ```text
+    https://aka.ms/sspr
+    ```
+
     ![에이전트 지침에 비밀번호 재설정 포털 안내, 하드웨어 대응과 이메일 지원 티켓 제출 규칙 추가](./images/05-create-agent-new-experience/exercise-02-task-02-step-02-add-it-support-guidelines.png)
 
 3. Copilot Studio의 새로운 환경에서는 지침이 에이전트 동작을 제어하는 기본 수단입니다. 잘 작성된 지침은 추가 구성의 필요성을 줄이고 에이전트의 예측 가능성을 높입니다.
@@ -149,6 +157,10 @@
 
 5. 새 탭을 열고 [Outlook 온라인](https://outlook.office.com/)으로 이동한 후 지원 티켓 제출 내용이 수신되었는지 확인합니다.
 
+    ```text
+    https://outlook.office.com/
+    ```
+
     ![Outlook 온라인 받은 편지함에서 이름, 이메일과 문제 설명이 포함된 IT 지원 티켓 메일 수신 확인](./images/05-create-agent-new-experience/exercise-03-task-01-step-05-verify-support-ticket-email-in-outlook.png)
 
 ### TASK 02. 지침 개선 및 게시
@@ -159,7 +171,11 @@
     - 암호와 관련된 모든 요청에 대해, 다른 지원을 제공하기 전에 항상 첫 번째 단계로 https://aka.ms/sspr 을 안내합니다.
     ```
 
-    포털 주소: [https://aka.ms/sspr](https://aka.ms/sspr).
+    포털 주소: [셀프 서비스 비밀번호 재설정 포털](https://aka.ms/sspr).
+
+    ```text
+    https://aka.ms/sspr
+    ```
 
     > [!NOTE]
     > [확인 필요: 원본 PDF의 이 예시에서 링크 대상은 `https://aka.ms/sspr을`로 지정되어 있으나 지침 본문 주소는 `https://aka.ms/sspr`입니다. 링크 대상의 일치 여부를 확인해야 합니다.]
