@@ -152,7 +152,7 @@ https://copilotstudio.microsoft.com
 > 복사된 에이전트는 원본과 별개로 관리되며, 이후 원본을 수정해도 복사본에 자동으로 반영되지 않습니다. `Copilot Studio에 복사` 메뉴가 없거나 실습 환경을 선택할 수 없다면, 관리자에게 라이선스, Dataverse 사용 권한 및 해당 환경의 접근 권한을 확인합니다. 자세한 조건은 [Agent Builder에서 Copilot Studio로 에이전트 복사](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/copy-agent-to-copilot-studio)를 참조합니다.
 
 
-![alt text](image.png)
+![Copilot Studio 에이전트 목록에서 자연어 입력창 없이 빈 에이전트 만들기 버튼만 표시되는 화면](./images/01-create-agents/exercise-02-task-01-step-01-missing-natural-language-input.png)
 
 
 자연어 입력창이 보이는 경우에는 다음 1~4단계로 Copilot Studio에서 직접 에이전트를 만듭니다.
