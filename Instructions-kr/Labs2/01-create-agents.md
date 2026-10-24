@@ -25,6 +25,16 @@
 
 ### TASK 01. 안전한 이동(Safe Travels) 템플릿으로 에이전트 만들기
 
+브라우저에서 새 탭을 열고 [Microsoft Copilot Studio](https://copilotstudio.microsoft.com)에 접속하여 실습 계정으로 로그인합니다.
+
+```text
+https://copilotstudio.microsoft.com
+```
+
+앞에서 만든 `CopilotLabEnv` 환경이 선택되어 있는지 확인합니다.
+
+새로운 Copilot Studio 화면이 표시되면, 왼쪽 하단의 계정 우측에서 `… > 클래식 환경 열기`를 선택합니다. 피드백 창이 표시되면 `피드백 건너뛰기`를 클릭합니다.
+
 1. Copilot Studio 클래식 포털의 왼쪽 내비게이션 메뉴에서 `에이전트`로 이동합니다. 페이지를 스크롤 다운한 후 `에이전트 템플릿으로 시작` 영역의 `안전한 이동` 템플릿을 클릭합니다.
 
    ![Copilot Studio 에이전트 템플릿 목록에서 안전한 이동 템플릿을 선택하는 위치](./images/01-create-agents/exercise-01-task-01-step-01-safe-travels-template.png)
