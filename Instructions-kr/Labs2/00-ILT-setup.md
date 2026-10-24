@@ -118,9 +118,13 @@
 
 ## TASK 04. 선언적 에이전트 만들기
 
-앞에서 실습 환경과 솔루션을 준비했습니다. 이번에는 Microsoft 365 Copilot의 Agent Builder에서 자연어로 요구 사항을 설명하여 교육 과정을 안내하는 선언적 에이전트를 만듭니다.
+앞에서 실습 환경과 솔루션을 준비했습니다. 이번에는 Microsoft 365 Copilot로 이동하여 Agent Builder에서 자연어로 요구 사항을 설명하고, 교육 과정을 안내하는 선언적 에이전트를 만듭니다.
 
-1. 실습 계정으로 Microsoft 365 Copilot에 접속한 후, 왼쪽 메뉴에서 `새 에이전트`를 선택하여 Agent Builder를 엽니다.
+1. 브라우저에서 새 탭을 열고 [Microsoft 365 Copilot](https://m365.cloud.microsoft/chat)에 접속하여 실습 계정으로 로그인합니다. 왼쪽 메뉴에서 `새 에이전트`를 선택하여 Agent Builder를 엽니다.
+
+   ```text
+   https://m365.cloud.microsoft/chat
+   ```
 
    ![Microsoft 365 Copilot에서 새 에이전트를 선택하고 Agent Builder의 메시지 입력 영역을 여는 위치](./images/00-ILT-setup/exercise-00-task-04-step-01-agent-builder.png)
 
@@ -171,7 +175,7 @@
    PL-7008 과정 커리큘럼 알려줘.
    ```
 
-8. 에이전트의 편집 화면을 열고 `구성`으로 이동합니다. 기존 지침은 유지하면서 응답 방식에 다음 두 가지 조건을 추가합니다.
+8. 에이전트 목록에서 앞서 만든 에이전트의 `… > 편집`을 선택한 후 `구성`으로 이동합니다. 기존 지침은 유지하면서 응답 방식에 다음 두 가지 조건을 추가합니다.
 
    ```prompt
    - 반드시 경상도 사투리를 구수하게 사용해서 답변합니다.(필수)
