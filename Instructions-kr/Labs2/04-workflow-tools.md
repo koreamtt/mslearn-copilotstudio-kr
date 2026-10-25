@@ -371,20 +371,20 @@ Copilot이 에이전트를 만들 때 생성하는 지침은 일정하지 않으
 
     ![ListTaskRows에서 OneDrive for Business의 Operations Tasks.xlsx 파일과 tblTasks 테이블 지정](./images/04-workflow-tools/exercise-03-task-02-step-08-configure-listtaskrows-workbook-table.png)
 
-9. `ListTaskRows` 작업의 `매개 변수` 탭에서 `고급 매개 변수` 영역으로 이동한 후 `모두 보기`를 클릭합니다. 그런 다음 `필터 쿼리` 영역을 다음과 같이 구성합니다.
+9. `테이블에 있는 행 나열` 작업의 아래쪽에 `고급 매개 변수` 영역으로 이동한 후 `모두 보기`를 클릭합니다. 그런 다음 `필터 쿼리` 영역을 다음과 같이 구성합니다.
 
     - `우선순위 eq ''`를 입력합니다. `우선순위`는 Excel의 열 이름이며, `eq`는 equal을 의미하는 연산자입니다. `''`는 문자열을 의미합니다.
     - `''` 사이에 마우스 커서를 위치한 후 동적 콘텐츠 아이콘을 클릭합니다. 그런 다음 `에이전트가 흐름을 호출할 때 | Priority` 입력 변수를 선택합니다.
 
     ![ListTaskRows 필터 쿼리에서 우선순위 eq 문자열 사이에 Priority 동적 콘텐츠 삽입](./images/04-workflow-tools/exercise-03-task-02-step-09-filter-rows-by-dynamic-priority.png)
 
-10. 디자이너 캔버스에서 `Respond to the agent` 작업을 선택합니다. 해당 창의 `매개 변수` 탭에서 다음 출력 변수를 구성합니다. 입력할 값은 Power Fx 수식으로 입력해야 합니다.
+10. 디자이너 캔버스에서 `Respond to the agent` 작업을 선택합니다.  `+ 출력 추가` 탭에서 다음 출력 변수를 구성합니다. 입력할 값은 Power Fx 수식으로 입력해야 합니다.
 
     | 항목 | 값 |
     |---|---|
     | 출력 유형 | `텍스트` |
     | 이름 | `TaskList` |
-    | 값 입력 | `string(outputs('ListTaskRows')?['body/value'])` |
+    | 값 입력 | `string(outputs('테이블에_있는_행_나열')?['body/value'])` |
 
     ![Respond to the agent의 TaskList 텍스트 출력에 ListTaskRows 결과를 문자열로 변환하는 식 설정](./images/04-workflow-tools/exercise-03-task-02-step-10-configure-tasklist-response-expression.png)
 
@@ -400,11 +400,11 @@ Copilot이 에이전트를 만들 때 생성하는 지침은 일정하지 않으
 
     ![흐름 실행 창의 Priority 입력에 높음 우선순위 지정](./images/04-workflow-tools/exercise-03-task-02-step-13-run-high-priority-test.png)
 
-14. 흐름이 실행되면 에이전트 흐름의 `활동` 탭으로 이동한 후 `ListTaskRows` 작업을 선택합니다. 작업 창의 `실행 결과` 탭에서 `출력` 영역의 `원시 출력 표시`를 클릭합니다.
+14. 흐름이 실행되면 에이전트 흐름의 `활동` 탭으로 이동한 후 `테이블에 있는 행 나열` 작업을 선택합니다. 작업 창의 `실행 결과` 탭에서 `출력` 영역의 `원시 출력 표시`를 클릭합니다.
 
     ![활동 탭에서 ListTaskRows 작업을 선택하고 실행 결과의 원시 출력 표시 선택](./images/04-workflow-tools/exercise-03-task-02-step-14-open-listtaskrows-raw-output.png)
 
-15. `ListTaskRows` 창에서 `body` 영역으로 이동하여 입력한 `높음` 우선순위에 해당하는 행 내용이 표시되는지 확인합니다.
+15. `테이블에 있는 행 나열` 창에서 `body` 영역으로 이동하여 입력한 `높음` 우선순위에 해당하는 행 내용이 표시되는지 확인합니다.
 
     ![ListTaskRows 원시 출력의 body에서 높음 우선순위 작업 행이 반환된 결과 확인](./images/04-workflow-tools/exercise-03-task-02-step-15-verify-high-priority-result-rows.png)
 
