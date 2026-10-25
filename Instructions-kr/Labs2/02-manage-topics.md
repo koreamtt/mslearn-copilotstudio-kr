@@ -32,6 +32,24 @@
 
 이 실습에서는 자연어를 사용하여 보험 청구 검토를 지원하는 새 에이전트를 만듭니다.
 
+**주의 — Agent Builder에서 에이전트를 만들어 복사한 경우**
+
+Microsoft 365 Copilot의 Agent Builder에서 에이전트를 만든 뒤 Copilot Studio로 복사한 경우에는, Copilot Studio에서 `만들기`를 클릭하기 전에 오른쪽 위의 `…` 메뉴를 열고 **언어와 고급 설정**을 반드시 확인합니다.
+
+![Agent Builder에서 복사한 에이전트의 만들기 전 메뉴에서 언어 업데이트와 고급 설정 업데이트를 선택하는 위치](./images/02-manage-topics/exercise-01-step-01-agent-builder-copy-settings-menu.png)
+
+**언어 확인:** `에이전트 언어 업데이트` 메뉴를 선택하여 언어를 `한국어(ko-KR)`로 지정한 후 `업데이트`를 클릭합니다. 메뉴에는 현재 언어 코드가 함께 표시될 수 있습니다.
+
+![에이전트의 언어 업데이트 창에서 한국어 ko-KR을 선택하고 업데이트하는 위치](./images/02-manage-topics/exercise-01-step-01-agent-builder-copy-language.png)
+
+**고급 설정 확인:** `고급 설정 업데이트` 메뉴를 선택하여 솔루션을 앞에서 만든 `LabSolution`으로, 스키마 이름을 `insuranceagent`로 지정한 후 `업데이트`를 클릭합니다. 개인 식별자를 붙여 만든 경우에는 본인의 실습 솔루션명과 스키마 이름을 사용합니다.
+
+![고급 설정 업데이트 창에서 본인의 실습 솔루션과 보험금 청구 검토 에이전트의 스키마 이름을 지정하는 위치](./images/02-manage-topics/exercise-01-step-01-agent-builder-copy-advanced-settings.png)
+
+두 항목을 확인한 뒤 `만들기`를 클릭합니다. 에이전트 생성이 완료되면 **EXERCISE 02. 토픽 관리**로 이동합니다.
+
+Copilot Studio에서 직접 에이전트를 만드는 경우에는 다음 1~3단계를 진행합니다.
+
 1. Copilot Studio 클래식 포털의 내비게이션 메뉴에서 `에이전트`로 이동한 후 `에이전트가 수행해야 할 작업을 설명하는 것으로 구축을 시작` 영역의 톱니바퀴 아이콘을 클릭합니다.
 
    ![Copilot Studio 에이전트 페이지에서 자연어 생성 영역의 설정 톱니바퀴 아이콘 위치](./images/02-manage-topics/exercise-01-step-01-agent-settings-menu.png)
