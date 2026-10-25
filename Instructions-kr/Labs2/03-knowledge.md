@@ -138,7 +138,7 @@
 
    | 항목 | 값 |
    |---|---|
-   | 이름 | `출장, 선물 및 차량 경비 \| 미국 국세청` |
+   | 이름 | `출장, 선물 및 차량 경비 | 미국 국세청` |
    | 설명 | `출장 경비의 환급 및 처리 기준에 대한 정보를 제공합니다.` |
 
    ![공개 웹 사이트 추가 창에 미국 국세청 Publication 463 주소와 출장 경비 관련 이름 및 설명을 입력한 상태](./images/03-knowledge/exercise-03-task-02-step-03-irs-website-name-description.png)
@@ -200,8 +200,8 @@
 
    | 항목 | 상태 |
    |---|---|
-   | 테스트 시 활동 지도 표시 | `켜져 있음` |
-   | 토픽 간 추적 | `꺼져 있음` |
+   | 테스트 시 활동 지도 표시 | `켜기` |
+   | 토픽 간 추적 | `끄기` |
 
    ![에이전트 테스트 메뉴에서 활동 지도 표시가 켜져 있고 토픽 간 추적은 꺼져 있는 상태](./images/03-knowledge/exercise-03-task-05-step-01-knowledge-test-options.png)
 
@@ -370,6 +370,7 @@
    ![Microsoft Teams 웹 앱의 경비 청구 지원 에이전트 추가 창에서 추가 버튼을 선택하는 위치](./images/03-knowledge/exercise-05-task-03-step-04-add-agent-to-teams.png)
 
 5. Microsoft Teams에서 게시된 에이전트를 테스트합니다.
+   `현재 미국 달러와 한국 원의 환율은 얼마인가요?`
 
    ![Microsoft Teams 채팅에서 게시된 경비 청구 지원 에이전트를 테스트하는 상태](./images/03-knowledge/exercise-05-task-03-step-05-published-teams-agent-test.png)
 
