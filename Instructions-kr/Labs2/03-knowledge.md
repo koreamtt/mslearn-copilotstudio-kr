@@ -46,7 +46,7 @@
 
    ```prompt
    경비 청구를 저장하고 처리하기 위한 테이블을 만들어 주세요.
-   다음 열을 포함해주세요.
+   다음 열을 포함해주세요. 열이름을 유지해주세요.
    - 경비 제목
    - 경비 유형(숙박비, 식비, 접대비, 교통비)
    - 경비 발생일
@@ -65,29 +65,40 @@
 
 ## EXERCISE 02. 에이전트 만들기
 
-이 실습에서는 자연어를 사용하여 가상 기업의 경비 정책 관련 질문에 답변하는 새 에이전트를 만듭니다.
+이 실습에서는 Microsoft 365 Copilot의 Agent Builder에서 자연어로 가상 기업의 경비 청구를 지원하는 새 에이전트를 만든 뒤, Copilot Studio로 복사하여 지식 원본을 연결합니다.
 
-1. Copilot Studio 포털의 내비게이션 메뉴에서 `에이전트`로 이동한 후 프롬프트 창의 톱니바퀴 아이콘을 클릭합니다.
+1. 브라우저에서 새 탭을 열고 [Microsoft 365 Copilot](https://m365.cloud.microsoft/chat)에 접속하여 실습 계정으로 로그인합니다. 왼쪽 메뉴에서 `새 에이전트`를 선택하여 Agent Builder를 엽니다.
 
-   ![Copilot Studio의 에이전트 페이지에서 프롬프트 창의 설정 톱니바퀴 아이콘 위치](./images/03-knowledge/exercise-02-step-01-agent-settings-menu.png)
+   ```text
+   https://m365.cloud.microsoft/chat
+   ```
 
-2. `에이전트 설정` 창에서 다음과 같이 구성한 후 `업데이트`를 클릭합니다.
-
-   | 항목 | 값 |
-   |---|---|
-   | 언어 | `한국어(대한민국)` |
-   | 솔루션 | `LabSolution` |
-   | 스키마 이름 | `expenseagent` |
-
-   ![에이전트 설정에서 한국어, LabSolution 솔루션과 expenseagent 스키마 이름을 구성한 상태](./images/03-knowledge/exercise-02-step-02-agent-language-solution-schema.png)
-
-3. 프롬프트 창에 다음 프롬프트를 입력한 후 실행합니다.
+2. Agent Builder의 메시지 입력 영역에 다음 프롬프트를 입력하고 제출합니다.
 
    ```prompt
    당신은 직원의 경비 청구를 지원하는 에이전트이며, 경비 정책, 청구 절차 및 기타 경비 청구 관련 질문에 답변합니다.
    ```
 
-   ![프롬프트 창에 직원의 경비 청구 및 경비 정책 질문에 답변하는 에이전트 설명을 입력한 상태](./images/03-knowledge/exercise-02-step-03-expense-agent-prompt.png)
+   ![Agent Builder의 메시지 입력 영역에 직원의 경비 청구를 지원하는 에이전트 설명을 입력한 상태](./images/03-knowledge/exercise-02-step-02-agent-builder-expense-agent-prompt.png)
+
+3. `구성`에서 이름, 설명, 지침에 요청한 내용이 반영되었는지 확인한 후, Agent Builder 오른쪽 위의 `만들기`를 클릭하여 에이전트를 저장합니다. 지식 원본은 Copilot Studio로 복사한 뒤 다음 실습에서 추가합니다.
+
+4. 에이전트 목록에서 방금 만든 에이전트의 `… > 편집`을 선택합니다. **편집 화면** 오른쪽 위의 `… > Copilot Studio에 복사`를 선택합니다.
+
+5. 복사 대상 환경으로 **EXERCISE 01에서 Dataverse 테이블을 만든 실습 환경**(`CopilotLabEnv` 또는 본인의 실습 환경 이름)을 선택합니다. Copilot Studio의 에이전트 생성 화면이 열리면 **아직 `만들기`를 클릭하지 말고**, 오른쪽 위의 `…` 메뉴에서 언어와 고급 설정을 확인합니다.
+
+6. `에이전트 언어 업데이트`를 선택하여 언어를 `한국어(ko-KR)`로 지정한 후 `업데이트`를 클릭합니다.
+
+7. 다시 오른쪽 위의 `…` 메뉴를 열고 `고급 설정 업데이트`를 선택합니다. 다음과 같이 구성한 후 `업데이트`를 클릭합니다. 개인 식별자를 붙여 만든 경우에는 본인의 실습 솔루션명과 스키마 이름을 사용합니다.
+
+   | 항목 | 값 |
+   |---|---|
+   | 솔루션 | `LabSolution` |
+   | 스키마 이름 | `expenseagent` |
+
+8. 언어와 고급 설정을 확인한 뒤 Copilot Studio 오른쪽 위의 `만들기`를 클릭하고, 에이전트 생성이 완료될 때까지 기다립니다.
+
+이후 실습은 Agent Builder의 원본이 아니라 **Copilot Studio에 복사된 에이전트**에서 진행합니다. 원본을 수정해도 복사본에는 자동으로 반영되지 않습니다. `Copilot Studio에 복사` 메뉴가 없거나 실습 환경을 선택할 수 없다면, 관리자에게 라이선스, Dataverse 사용 권한 및 해당 환경의 접근 권한을 확인합니다.
 
 ## EXERCISE 03. 에이전트에 지식 추가
 

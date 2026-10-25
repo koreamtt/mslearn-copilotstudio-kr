@@ -374,8 +374,7 @@
 
    ![고객 세부 정보 토픽에서 수집한 이름과 이메일 주소가 적응형 카드에 표시되고 예로 확인하는 위치](./images/02-manage-topics/exercise-06-task-01-step-03-confirm-customer-details-card.png)
 
-4. 토픽 구성에 따라 다시 `손해 평가 일정 예약` 토픽의 내용이 표시됩니다. 예약 일정을 묻는 질문에 적절하게 응답합니다.
-
+4. 토픽 구성에 따라 다시 `손해 평가 일정 예약` 토픽의 내용이 표시됩니다. 예약 일정을 묻는 질문에 적절하게 응답합니다. `내일 오전 10시`,`금요일 오전 10시`
    ![고객 정보 확인 후 손해 평가 일정 예약 토픽으로 돌아와 날짜와 시간 질문에 응답한 결과](./images/02-manage-topics/exercise-06-task-01-step-04-appointment-datetime-response.png)
 
 <a id="task-02-엔터티-구성"></a>
@@ -402,7 +401,7 @@
    |---|---|
    | 이름 | `사용자 이름` |
    | 설명 | `한글로 입력된 사용자 이름을 인식합니다.` |
-   | 패턴 | `^[가-힣]{2,4}$` |
+   | 패턴 | 한글전용`^[가-힣]{2,4}$`|
 
    ![사용자 이름 엔터티에 한글 이름 인식 설명과 두 글자에서 네 글자까지의 정규식 패턴을 입력한 상태](./images/02-manage-topics/exercise-06-task-02-step-04-korean-name-regex-pattern.png)
 
@@ -415,6 +414,8 @@
    ![고객 이름 질문의 식별 정보를 사람 이름에서 사용자 이름 엔터티로 변경하는 위치](./images/02-manage-topics/exercise-06-task-02-step-06-replace-person-name-entity.png)
 
 7. 다시 한번 테스트를 진행하여 한글로 입력한 이름이 올바르게 표시되는지 확인합니다.
+`보험금 청구를 위한 손해 평가 일정을 예약하고 싶습니다.`
+`홍길동`
 
    ![사용자 이름 엔터티로 다시 테스트한 후 적응형 카드에 한글 이름이 올바르게 표시된 결과](./images/02-manage-topics/exercise-06-task-02-step-07-korean-name-test-result.png)
 
