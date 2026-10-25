@@ -30,47 +30,44 @@
 
 ## EXERCISE 01. 에이전트 만들기
 
-이 실습에서는 자연어를 사용하여 보험 청구 검토를 지원하는 새 에이전트를 만듭니다.
+이 실습에서는 Microsoft 365 Copilot의 Agent Builder에서 자연어로 보험금 청구 검토를 지원하는 새 에이전트를 만든 뒤, Copilot Studio로 복사하여 토픽을 구성합니다.
 
-**주의 — Agent Builder에서 에이전트를 만들어 복사한 경우**
+1. 브라우저에서 새 탭을 열고 [Microsoft 365 Copilot](https://m365.cloud.microsoft/chat)에 접속하여 실습 계정으로 로그인합니다. 왼쪽 메뉴에서 `새 에이전트`를 선택하여 Agent Builder를 엽니다.
 
-Microsoft 365 Copilot의 Agent Builder에서 에이전트를 만든 뒤 Copilot Studio로 복사한 경우에는, Copilot Studio에서 `만들기`를 클릭하기 전에 오른쪽 위의 `…` 메뉴를 열고 **언어와 고급 설정**을 반드시 확인합니다.
+   ```text
+   https://m365.cloud.microsoft/chat
+   ```
 
-![Agent Builder에서 복사한 에이전트의 만들기 전 메뉴에서 언어 업데이트와 고급 설정 업데이트를 선택하는 위치](./images/02-manage-topics/exercise-01-step-01-agent-builder-copy-settings-menu.png)
-
-**언어 확인:** `에이전트 언어 업데이트` 메뉴를 선택하여 언어를 `한국어(ko-KR)`로 지정한 후 `업데이트`를 클릭합니다. 메뉴에는 현재 언어 코드가 함께 표시될 수 있습니다.
-
-![에이전트의 언어 업데이트 창에서 한국어 ko-KR을 선택하고 업데이트하는 위치](./images/02-manage-topics/exercise-01-step-01-agent-builder-copy-language.png)
-
-**고급 설정 확인:** `고급 설정 업데이트` 메뉴를 선택하여 솔루션을 앞에서 만든 `LabSolution`으로, 스키마 이름을 `insuranceagent`로 지정한 후 `업데이트`를 클릭합니다. 개인 식별자를 붙여 만든 경우에는 본인의 실습 솔루션명과 스키마 이름을 사용합니다.
-
-![고급 설정 업데이트 창에서 본인의 실습 솔루션과 보험금 청구 검토 에이전트의 스키마 이름을 지정하는 위치](./images/02-manage-topics/exercise-01-step-01-agent-builder-copy-advanced-settings.png)
-
-두 항목을 확인한 뒤 `만들기`를 클릭합니다. 에이전트 생성이 완료되면 **EXERCISE 02. 토픽 관리**로 이동합니다.
-
-Copilot Studio에서 직접 에이전트를 만드는 경우에는 다음 1~3단계를 진행합니다.
-
-1. Copilot Studio 클래식 포털의 내비게이션 메뉴에서 `에이전트`로 이동한 후 `에이전트가 수행해야 할 작업을 설명하는 것으로 구축을 시작` 영역의 톱니바퀴 아이콘을 클릭합니다.
-
-   ![Copilot Studio 에이전트 페이지에서 자연어 생성 영역의 설정 톱니바퀴 아이콘 위치](./images/02-manage-topics/exercise-01-step-01-agent-settings-menu.png)
-
-2. `에이전트 설정` 창에서 다음과 같이 구성한 후 `업데이트`를 클릭합니다.
-
-   | 항목 | 값 |
-   |---|---|
-   | 언어 | `한국어(대한민국)` |
-   | 솔루션 | `LabSolution` |
-   | 스키마 이름 | `insuranceagent` |
-
-   ![에이전트 설정에서 한국어, LabSolution 솔루션 및 insuranceagent 스키마 이름을 구성한 상태](./images/02-manage-topics/exercise-01-step-02-agent-language-solution-schema.png)
-
-3. 다음 프롬프트를 입력하고 제출하여 새 에이전트를 만듭니다. 에이전트 프로비저닝이 완료되면 에이전트 구성을 계속할 수 있습니다.
+2. Agent Builder의 메시지 입력 영역에 다음 프롬프트를 입력하고 제출합니다.
 
    ```prompt
    보험금 청구 건을 검토하고, 손해 평가 세부 정보와 수리 견적을 확인하여 보험금 청구 검토를 지원하는 에이전트를 만들어 주세요.
    ```
 
-   ![자연어 입력창에 보험금 청구 검토를 지원하는 에이전트 생성 프롬프트를 입력한 상태](./images/02-manage-topics/exercise-01-step-03-insurance-agent-prompt.png)
+3. `구성`에서 이름, 설명, 지침에 요청한 내용이 반영되었는지 확인한 후, Agent Builder 오른쪽 위의 `만들기`를 클릭하여 에이전트를 저장합니다.
+
+4. 에이전트 목록에서 방금 만든 에이전트의 `… > 편집`을 선택합니다. **편집 화면** 오른쪽 위의 `… > Copilot Studio에 복사`를 선택합니다.
+
+5. 복사 대상 환경으로 앞에서 만든 실습 환경(`CopilotLabEnv` 또는 본인의 실습 환경 이름)을 선택합니다. Copilot Studio의 에이전트 생성 화면이 열리면 **아직 `만들기`를 클릭하지 말고**, 오른쪽 위의 `…` 메뉴에서 **언어와 고급 설정**을 확인합니다.
+
+   ![Agent Builder에서 복사한 에이전트의 만들기 전 메뉴에서 언어 업데이트와 고급 설정 업데이트를 선택하는 위치](./images/02-manage-topics/exercise-01-step-05-agent-builder-copy-settings-menu.png)
+
+6. `에이전트 언어 업데이트` 메뉴를 선택하여 언어를 `한국어(ko-KR)`로 지정한 후 `업데이트`를 클릭합니다. 메뉴에는 현재 언어 코드가 함께 표시될 수 있습니다.
+
+   ![에이전트의 언어 업데이트 창에서 한국어 ko-KR을 선택하고 업데이트하는 위치](./images/02-manage-topics/exercise-01-step-06-agent-builder-copy-language.png)
+
+7. 다시 오른쪽 위의 `…` 메뉴를 열고 `고급 설정 업데이트`를 선택합니다. 다음과 같이 구성한 후 `업데이트`를 클릭합니다. 개인 식별자를 붙여 만든 경우에는 본인의 실습 솔루션명과 스키마 이름을 사용합니다.
+
+   | 항목 | 값 |
+   |---|---|
+   | 솔루션 | `LabSolution` |
+   | 스키마 이름 | `insuranceagent` |
+
+   ![고급 설정 업데이트 창에서 본인의 실습 솔루션과 보험금 청구 검토 에이전트의 스키마 이름을 지정하는 위치](./images/02-manage-topics/exercise-01-step-07-agent-builder-copy-advanced-settings.png)
+
+8. 언어와 고급 설정을 확인한 뒤 Copilot Studio 오른쪽 위의 `만들기`를 클릭합니다. 에이전트 프로비저닝이 완료되면 **EXERCISE 02. 토픽 관리**로 이동합니다. 새로운 Copilot Studio 화면이 표시되어 다음 단계의 메뉴가 보이지 않으면 `클래식 환경 열기`를 선택합니다.
+
+이후 실습은 Agent Builder의 원본이 아니라 **Copilot Studio에 복사된 에이전트**에서 진행합니다. 원본을 수정해도 복사본에는 자동으로 반영되지 않습니다. `Copilot Studio에 복사` 메뉴가 없거나 실습 환경을 선택할 수 없다면, 관리자에게 라이선스, Dataverse 사용 권한 및 해당 환경의 접근 권한을 확인합니다.
 
 ## EXERCISE 02. 토픽 관리
 
