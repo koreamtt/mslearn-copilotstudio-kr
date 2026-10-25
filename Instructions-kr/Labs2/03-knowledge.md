@@ -98,7 +98,7 @@
 
 8. 언어와 고급 설정을 확인한 뒤 Copilot Studio 오른쪽 위의 `만들기`를 클릭하고, 에이전트 생성이 완료될 때까지 기다립니다.
 
-이후 실습은 Agent Builder의 원본이 아니라 **Copilot Studio에 복사된 에이전트**에서 진행합니다. 원본을 수정해도 복사본에는 자동으로 반영되지 않습니다. `Copilot Studio에 복사` 메뉴가 없거나 실습 환경을 선택할 수 없다면, 관리자에게 라이선스, Dataverse 사용 권한 및 해당 환경의 접근 권한을 확인합니다.
+이후 실습은 Agent Builder의 원본이 아니라 **Copilot Studio에 복사된 에이전트**에서 진행합니다. 
 
 ## EXERCISE 03. 에이전트에 지식 추가
 
@@ -106,7 +106,7 @@
 
 ### E03.TASK 01. 문서를 지식 소스로 추가
 
-1. 브라우저에서 새 탭을 열고 [https://raw.githubusercontent.com/313mlclub/pl-7008/refs/heads/main/Expenses_Policy_v2_KO.docx](https://raw.githubusercontent.com/313mlclub/pl-7008/refs/heads/main/Expenses_Policy_v2_KO.docx) 경로로 이동하여 경비 정책 문서를 로컬 컴퓨터에 다운로드합니다. 이 문서에는 가상 기업의 경비 정책에 대한 세부 정보가 포함되어 있습니다.
+1. [경비 정책 문서(Expenses_Policy_v2_KO.docx)](./files/Expenses_Policy_v2_KO.docx)를 로컬 컴퓨터에 다운로드합니다. 이 문서에는 가상 기업의 경비 정책에 대한 세부 정보가 포함되어 있습니다.
 
 2. 새로 만든 에이전트의 `참조 자료` 탭으로 이동한 후 `+ 참조 자료 추가`를 클릭합니다.
 
