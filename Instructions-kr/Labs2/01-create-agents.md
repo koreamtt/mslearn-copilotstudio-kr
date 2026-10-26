@@ -132,25 +132,25 @@ https://copilotstudio.microsoft.com
 
 ### E02.TASK 01. 정부 복지 혜택에 답변하는 에이전트 만들기
 
-**자연어 입력창이나 톱니바퀴 아이콘이 보이지 않는 경우**
+이 실습에서는 Microsoft 365 Copilot의 Agent Builder에서 자연어로 대한민국 정부의 복지 혜택과 지원 제도를 안내하는 새 에이전트를 만든 뒤, Copilot Studio로 복사하여 지식 원본을 연결합니다.
 
-메뉴를 더 찾거나 환경 설정을 변경하지 말고, **아래 Copilot Studio 직접 생성 절차의 1~4단계를 건너뛰고 Agent Builder에서 만든 뒤 Copilot Studio로 복사**하여 실습을 이어갑니다.
+1. 브라우저에서 새 탭을 열고 [Microsoft 365 Copilot](https://m365.cloud.microsoft/chat)에 접속하여 실습 계정으로 로그인합니다. 왼쪽 메뉴에서 `새 에이전트`를 선택하여 Agent Builder를 엽니다.
 
-먼저 새 탭에서 [Microsoft 365 Copilot](https://m365.cloud.microsoft/chat)에 접속하고, 같은 실습 계정으로 로그인합니다.
+   ```text
+   https://m365.cloud.microsoft/chat
+   ```
 
-```text
-https://m365.cloud.microsoft/chat
-```
+2. Agent Builder의 메시지 입력 영역에 다음 프롬프트를 입력하고 제출합니다.
 
-1. 왼쪽 메뉴의 `새 에이전트`를 선택하여 Agent Builder를 엽니다.
+   ```prompt
+   대한민국 정부의 복지 혜택 및 지원 제도에 관한 사용자의 질문에 답변하고, 필요한 정보를 찾을 수 있도록 지원하는 에이전트를 만들어 주세요. 모든 답변은 한국어로 제공해 주세요.
+   ```
 
-2. Agent Builder의 메시지 입력 영역에 아래 Copilot Studio 직접 생성 절차의 **3번에 있는 프롬프트**를 그대로 입력하고 제출합니다.
+3. 생성된 에이전트의 `구성`에서 이름, 설명, 지침에 요청한 내용이 반영되었는지 확인합니다.
 
-3. `구성`에서 이름, 설명, 지침에 요청한 내용이 반영되었는지 확인한 후, Agent Builder 오른쪽 위의 `만들기`를 클릭하여 에이전트를 저장합니다.
+4. Agent Builder에 방금 만든 에이전트의 오른쪽 위에 `… `을 클릭, `Copilot Studio에 복사`를 선택, `시작`을 클릭합니다.
 
-4. 에이전트 목록에서 방금 만든 에이전트의 `… > 편집`을 선택합니다. **편집 화면** 오른쪽 위의 `… > Copilot Studio에 복사`를 선택합니다.
-
-5. 복사 대상 환경으로 앞에서 만든 실습 환경(`CopilotLabEnv` 또는 본인의 실습 환경 이름)을 선택합니다. Copilot Studio의 에이전트 생성 화면이 열리면 **아직 `만들기`를 클릭하지 말고**, 오른쪽 위의 `…` 메뉴에서 언어와 고급 설정을 확인합니다.
+5. Copilot Studio의 에이전트 생성 화면으로 전환, 에이전트가 열리면 **아직 `만들기`를 클릭하지 말고**, 오른쪽 위의 `…` 메뉴에서 언어와 고급 설정을 확인합니다.
 
 6. `에이전트 언어 업데이트`를 선택하여 언어를 `한국어(ko-KR)`로 지정한 후 `업데이트`를 클릭합니다.
 
@@ -163,39 +163,7 @@ https://m365.cloud.microsoft/chat
 
 8. 언어와 고급 설정을 확인한 뒤 Copilot Studio 오른쪽 위의 `만들기`를 클릭하고, 에이전트 생성이 완료될 때까지 기다립니다.
 
-이후 실습은 Agent Builder의 원본이 아니라 **Copilot Studio에 복사된 에이전트**에서 진행합니다. 원본을 수정해도 복사본에는 자동으로 반영되지 않습니다. `Copilot Studio에 복사` 메뉴가 없거나 실습 환경을 선택할 수 없다면, 관리자에게 라이선스, Dataverse 사용 권한 및 해당 환경의 접근 권한을 확인합니다. 자세한 조건은 [Agent Builder에서 Copilot Studio로 에이전트 복사](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/copy-agent-to-copilot-studio)를 참조합니다.
-
-복사된 에이전트가 열리면 아래 Copilot Studio 직접 생성 절차를 건너뛰고, **[E02.TASK 02. 개요 탭 구성](#task-02-개요-탭-구성)**으로 이동합니다.
-
-
-![Copilot Studio 에이전트 목록에서 자연어 입력창 없이 빈 에이전트 만들기 버튼만 표시되는 화면](./images/01-create-agents/exercise-02-task-01-step-01-missing-natural-language-input.png)
-
-
-자연어 입력창이 보이는 경우에는 다음 1~4단계로 Copilot Studio에서 직접 에이전트를 만듭니다.
-
-1. Copilot Studio 클래식 포털의 내비게이션 메뉴에서 `에이전트`로 이동한 후 자연어 입력창의 톱니바퀴 아이콘을 클릭합니다.
-
-   ![Copilot Studio의 에이전트 페이지에서 자연어 입력창의 에이전트 설정 톱니바퀴 위치](./images/01-create-agents/exercise-02-task-01-step-01-natural-language-agent-settings.png)
-
-2. `에이전트 설정` 창에서 다음과 같이 구성한 후 `업데이트`를 클릭합니다.
-
-   | 항목 | 값 |
-   |---|---|
-   | 언어 | `한국어(대한민국)` |
-   | 솔루션 | `LabSolution` |
-   | 스키마 이름 | `govbenefitsagent` |
-
-   ![에이전트 설정 창에서 한국어, LabSolution 솔루션 및 govbenefitsagent 스키마 이름을 구성한 상태](./images/01-create-agents/exercise-02-task-01-step-02-agent-language-solution-schema.png)
-
-3. `에이전트가 수행해야 할 작업을 설명하는 것으로 구축을 시작` 프롬프트 창에 다음 프롬프트를 입력한 후 실행합니다.
-
-   ```prompt
-   대한민국 정부의 복지 혜택 및 지원 제도에 관한 사용자의 질문에 답변하고, 필요한 정보를 찾을 수 있도록 지원하는 에이전트를 만들어 주세요. 모든 답변은 한국어로 제공해 주세요.
-   ```
-
-   ![자연어 입력창에 대한민국 정부 복지 혜택에 한국어로 답변하는 에이전트 생성 프롬프트를 입력한 상태](./images/01-create-agents/exercise-02-task-01-step-03-describe-welfare-agent-prompt.png)
-
-4. 새 에이전트 프로비저닝이 완료될 때까지 기다립니다.
+이후 실습은 Agent Builder의 원본이 아니라 **Copilot Studio에 복사된 에이전트**에서 진행합니다. 원본을 수정해도 복사본에는 자동으로 반영되지 않습니다.
 
 <a id="task-02-개요-탭-구성"></a>
 
