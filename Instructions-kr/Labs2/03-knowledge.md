@@ -81,7 +81,7 @@
 
    ![Agent Builder의 메시지 입력 영역에 직원의 경비 청구를 지원하는 에이전트 설명을 입력한 상태](./images/03-knowledge/exercise-02-step-02-agent-builder-expense-agent-prompt.png)
 
-3. `구성`에서 이름, 설명, 지침에 요청한 내용이 반영되었는지 확인한 후, Agent Builder 오른쪽 위의 `만들기`를 클릭하여 에이전트를 저장합니다. 지식 원본은 Copilot Studio로 복사한 뒤 다음 실습에서 추가합니다.
+3. 생성된 에이전트의 `구성`탭에서 이름, 설명, 지침에 요청한 내용이 반영되었는지 확인한 후, Agent Builder 오른쪽 위의 `Copilot Studio에 복사`한 뒤 다음 실습에서 추가합니다.
 
 4. 에이전트 목록에서 방금 만든 에이전트의 `… > 편집`을 선택합니다. **편집 화면** 오른쪽 위의 `… > Copilot Studio에 복사`를 선택합니다.
 
