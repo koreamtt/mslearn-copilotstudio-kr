@@ -65,7 +65,7 @@
 
    ![고급 설정 업데이트 창에서 본인의 실습 솔루션과 보험금 청구 검토 에이전트의 스키마 이름을 지정하는 위치](./images/02-manage-topics/exercise-01-step-07-agent-builder-copy-advanced-settings.png)
 
-8. 언어와 고급 설정을 확인한 뒤 Copilot Studio 오른쪽 위의 `만들기`를 클릭합니다.
+8. 언어와 고급 설정을 확인한 뒤 Copilot Studio 오른쪽 위의 `만들기`를 클릭하고, 에이전트 생성이 완료될 때까지 기다립니다.
 
 이후 실습은 Agent Builder의 원본이 아니라 **Copilot Studio에 복사된 에이전트**에서 진행합니다. 원본을 수정해도 복사본에는 자동으로 반영되지 않습니다. `Copilot Studio에 복사` 메뉴가 없거나 실습 환경을 선택할 수 없다면, 관리자에게 라이선스, Dataverse 사용 권한 및 해당 환경의 접근 권한을 확인합니다.
 

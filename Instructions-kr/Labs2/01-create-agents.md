@@ -143,12 +143,29 @@ https://m365.cloud.microsoft/chat
 ```
 
 1. 왼쪽 메뉴의 `새 에이전트`를 선택하여 Agent Builder를 엽니다.
-2. 아래 Copilot Studio 직접 생성 절차의 **3번에 있는 프롬프트**를 그대로 입력하여 정부 복지 혜택을 안내하는 **새 에이전트**를 만들고 저장합니다.
-3. 만든 에이전트의 **편집 화면**에서 오른쪽 위의 `… > Copilot Studio에 복사`를 선택합니다.
-4. 복사 대상 환경으로 앞에서 만든 실습 환경(`CopilotLabEnv` 또는 본인의 실습 환경 이름)을 선택합니다. 복사 후 열린 Copilot Studio 화면에서 필요한 생성·저장 절차를 완료합니다.
-5. Copilot Studio에서 복사된 에이전트를 열고, **[E02.TASK 02. 개요 탭 구성](#task-02-개요-탭-구성)**으로 이동합니다. 이후 실습은 Agent Builder의 원본이 아니라 **Copilot Studio에 복사된 에이전트**에서 진행합니다.
 
-복사된 에이전트는 원본과 별개로 관리되며, 이후 원본을 수정해도 복사본에 자동으로 반영되지 않습니다. `Copilot Studio에 복사` 메뉴가 없거나 실습 환경을 선택할 수 없다면, 관리자에게 라이선스, Dataverse 사용 권한 및 해당 환경의 접근 권한을 확인합니다. 자세한 조건은 [Agent Builder에서 Copilot Studio로 에이전트 복사](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/copy-agent-to-copilot-studio)를 참조합니다.
+2. Agent Builder의 메시지 입력 영역에 아래 Copilot Studio 직접 생성 절차의 **3번에 있는 프롬프트**를 그대로 입력하고 제출합니다.
+
+3. `구성`에서 이름, 설명, 지침에 요청한 내용이 반영되었는지 확인한 후, Agent Builder 오른쪽 위의 `만들기`를 클릭하여 에이전트를 저장합니다.
+
+4. 에이전트 목록에서 방금 만든 에이전트의 `… > 편집`을 선택합니다. **편집 화면** 오른쪽 위의 `… > Copilot Studio에 복사`를 선택합니다.
+
+5. 복사 대상 환경으로 앞에서 만든 실습 환경(`CopilotLabEnv` 또는 본인의 실습 환경 이름)을 선택합니다. Copilot Studio의 에이전트 생성 화면이 열리면 **아직 `만들기`를 클릭하지 말고**, 오른쪽 위의 `…` 메뉴에서 언어와 고급 설정을 확인합니다.
+
+6. `에이전트 언어 업데이트`를 선택하여 언어를 `한국어(ko-KR)`로 지정한 후 `업데이트`를 클릭합니다.
+
+7. 다시 오른쪽 위의 `…` 메뉴를 열고 `고급 설정 업데이트`를 선택합니다. 다음과 같이 구성한 후 `업데이트`를 클릭합니다. 개인 식별자를 붙여 만든 경우에는 본인의 실습 솔루션명과 스키마 이름을 사용합니다.
+
+   | 항목 | 값 |
+   |---|---|
+   | 솔루션 | `LabSolution` |
+   | 스키마 이름 | `govbenefitsagent` |
+
+8. 언어와 고급 설정을 확인한 뒤 Copilot Studio 오른쪽 위의 `만들기`를 클릭하고, 에이전트 생성이 완료될 때까지 기다립니다.
+
+이후 실습은 Agent Builder의 원본이 아니라 **Copilot Studio에 복사된 에이전트**에서 진행합니다. 원본을 수정해도 복사본에는 자동으로 반영되지 않습니다. `Copilot Studio에 복사` 메뉴가 없거나 실습 환경을 선택할 수 없다면, 관리자에게 라이선스, Dataverse 사용 권한 및 해당 환경의 접근 권한을 확인합니다. 자세한 조건은 [Agent Builder에서 Copilot Studio로 에이전트 복사](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/copy-agent-to-copilot-studio)를 참조합니다.
+
+복사된 에이전트가 열리면 아래 Copilot Studio 직접 생성 절차를 건너뛰고, **[E02.TASK 02. 개요 탭 구성](#task-02-개요-탭-구성)**으로 이동합니다.
 
 
 ![Copilot Studio 에이전트 목록에서 자연어 입력창 없이 빈 에이전트 만들기 버튼만 표시되는 화면](./images/01-create-agents/exercise-02-task-01-step-01-missing-natural-language-input.png)

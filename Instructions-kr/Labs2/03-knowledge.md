@@ -81,7 +81,7 @@
 
    ![Agent Builder의 메시지 입력 영역에 직원의 경비 청구를 지원하는 에이전트 설명을 입력한 상태](./images/03-knowledge/exercise-02-step-02-agent-builder-expense-agent-prompt.png)
 
-3. 생성된 에이전트의 `구성`탭에서 이름, 설명, 지침에 요청한 내용이 반영되었는지 확인한 후, Agent Builder 오른쪽 위의 `Copilot Studio에 복사`한 뒤 다음 실습에서 추가합니다.
+3. `구성`에서 이름, 설명, 지침에 요청한 내용이 반영되었는지 확인한 후, Agent Builder 오른쪽 위의 `만들기`를 클릭하여 에이전트를 저장합니다. 지식 원본은 Copilot Studio로 복사한 뒤 다음 실습에서 추가합니다.
 
 4. 에이전트 목록에서 방금 만든 에이전트의 `… > 편집`을 선택합니다. **편집 화면** 오른쪽 위의 `… > Copilot Studio에 복사`를 선택합니다.
 
@@ -98,7 +98,7 @@
 
 8. 언어와 고급 설정을 확인한 뒤 Copilot Studio 오른쪽 위의 `만들기`를 클릭하고, 에이전트 생성이 완료될 때까지 기다립니다.
 
-이후 실습은 Agent Builder의 원본이 아니라 **Copilot Studio에 복사된 에이전트**에서 진행합니다. 
+이후 실습은 Agent Builder의 원본이 아니라 **Copilot Studio에 복사된 에이전트**에서 진행합니다. 원본을 수정해도 복사본에는 자동으로 반영되지 않습니다. `Copilot Studio에 복사` 메뉴가 없거나 실습 환경을 선택할 수 없다면, 관리자에게 라이선스, Dataverse 사용 권한 및 해당 환경의 접근 권한을 확인합니다.
 
 ## EXERCISE 03. 에이전트에 지식 추가
 
