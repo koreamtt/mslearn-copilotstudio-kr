@@ -180,7 +180,7 @@
 
     ![작업 우선순위 분석 에이전트의 도구 탭에서 도구 추가 선택](./images/04-workflow-tools/exercise-02-task-04-step-02-add-tool-to-agent.png)
 
-3. `도구 추가` 창에서 `워크플로`를 선택한 후 앞서 만들었던 `Teams로 요약 전송` 에이전트 흐름을 선택합니다. 그런 다음 `추가 및 구성`을 클릭합니다.
+3. `도구 추가` 창에서 `흐름`을 선택한 후 앞서 만들었던 `Teams로 요약 전송` 에이전트 흐름을 선택합니다. 그런 다음 `추가 및 구성`을 클릭합니다.
 
     ![도구 추가 창에서 흐름으로 필터링하고 Teams로 요약 전송 흐름 선택](./images/04-workflow-tools/exercise-02-task-04-step-03-select-teams-summary-flow.png)
 
@@ -255,7 +255,10 @@ Copilot이 에이전트를 만들 때 생성하는 지침은 일정하지 않으
 1. 에이전트의 메뉴에서 `테스트`를 선택한 후 새 테스트 세션을 시작하고 다음 프롬프트를 입력합니다. Microsoft Teams 연결 메시지가 표시되면 실습 계정으로 Teams에 로그인합니다.
 
     ```prompt
-    다음 작업 목록을 분석해주세요. 1. 에이전트 만들기, 2. 에이전트 테스트하기, 3. 에이전트 배포하기
+    다음 작업 목록을 분석해주세요. 
+    1. 에이전트 만들기, 
+    2. 에이전트 테스트하기, 
+    3. 에이전트 배포하기
     ```
 
     ![에이전트 테스트에서 작업 목록 분석을 요청하고 Teams 요약 전송 도구 호출 확인](./images/04-workflow-tools/exercise-02-task-06-step-01-test-agent-task-analysis.png)
@@ -274,35 +277,21 @@ Copilot이 에이전트를 만들 때 생성하는 지침은 일정하지 않으
 
 <a id="task-01-excel-파일-만들기"></a>
 
-### E03.TASK 01. EXCEL 파일 만들기
+### E03.TASK 01. Excel 파일 업로드 및 테이블 구성
 
-1. Copilot Studio의 왼쪽 상단에서 앱 시작 관리자 아이콘을 클릭한 후 `OneDrive`를 선택합니다.
+1. [작업 목록 Excel 파일(Operations Taks.xlsx)](./files/Operations%20Taks.xlsx)을 로컬 컴퓨터에 다운로드합니다. 파일에는 실습에 사용할 작업 데이터가 입력되어 있습니다.
+
+2. Copilot Studio의 왼쪽 상단에서 앱 시작 관리자 아이콘을 클릭한 후 `OneDrive`를 선택합니다. 실습 계정의 OneDrive가 열렸는지 확인하고 `My files`로 이동합니다.
 
     ![Copilot Studio의 앱 시작 관리자에서 OneDrive 앱 선택](./images/04-workflow-tools/exercise-03-task-01-step-01-open-onedrive-app.png)
 
-2. OneDrive에서 `+ Create or upload > Excel workbook`을 클릭합니다.
+3. OneDrive에서 `+ Create or upload > Files`를 선택합니다. 다운로드한 `Operations Taks.xlsx` 파일을 선택하여 업로드하고, 업로드가 완료될 때까지 기다립니다.
 
-    ![OneDrive의 Create or upload 메뉴에서 Excel workbook 만들기 선택](./images/04-workflow-tools/exercise-03-task-01-step-02-create-excel-workbook.png)
+4. OneDrive에서 `Operations Tasks.xlsx`를 클릭하여 Excel 웹으로 엽니다. `A1:F5` 범위에 `참조 번호`, `작업 제목`, `설명`, `요청 부서`, `우선순위`, `상태` 열과 작업 데이터 4건이 있는지 확인합니다. 이후 필터 쿼리에서 사용하는 `우선순위` 열 이름과 `높음`, `보통` 값은 변경하지 않습니다.
 
-3. Excel 워크북의 이름을 `Operations Taks`로 변경합니다.
+    ![Excel 워크북에 입력된 참조 번호, 작업 제목, 설명, 요청 부서, 우선순위와 상태 데이터 확인](./images/04-workflow-tools/exercise-03-task-01-step-04-populate-operations-task-data.png)
 
-    ![Excel 웹에서 Operations Tasks 워크북 이름을 지정한 원본 스크린샷](./images/04-workflow-tools/exercise-03-task-01-step-03-rename-operations-workbook.png)
-
-    > [!NOTE]
-    > [확인 필요: 원본의 이 단계는 `Operations Taks`로 안내하지만, 원본 스크린샷과 이후 단계는 `Operations Tasks.xlsx`를 사용합니다. 실습에 사용할 파일 이름을 확인해야 합니다.]
-
-4. 아래 내용으로 Excel 내용을 채웁니다.
-
-    | `참조 번호` | `작업 제목` | `설명` | `요청 부서` | `우선순위` | `상태` |
-    |---|---|---|---|---|---|
-    | `OPS-001` | `서버 패치 업데이트` | `프로덕션 서버에 월별 보안 패치를 적용합니다.` | `IT 운영팀` | `높음` | `미착수` |
-    | `OPS-002` | `백업 검증` | `야간 백업이 성공적으로 완료되었는지 확인합니다.` | `인프라 팀` | `보통` | `진행 중` |
-    | `OPS-003` | `액세스 검토` | `비활성 사용자 계정을 검토하고 제거합니다.` | `보안 팀` | `높음` | `미착수` |
-    | `OPS-004` | `인시던트 보고서` | `최근 발생한 서비스 중단의 근본 원인을 문서화합니다.` | `서비스 데스크` | `보통` | `완료` |
-
-    ![Excel 워크북에 참조 번호, 작업 제목, 설명, 요청 부서, 우선순위와 상태 데이터 입력](./images/04-workflow-tools/exercise-03-task-01-step-04-populate-operations-task-data.png)
-
-5. 데이터가 포함된 행과 열 `A1:F5`를 선택한 후 `Insert` 리본 메뉴의 `Tables > Table`을 클릭합니다. `Create Table` 창이 표시되면 `My table has headers` 옵션을 선택하고 `OK`를 클릭합니다.
+5. 첨부 파일의 데이터는 아직 Excel 테이블로 지정되어 있지 않습니다. 워크플로의 `테이블에 있는 행 나열` 작업에서 사용할 수 있도록 `A1:F5` 범위를 선택한 후 `Insert` 리본 메뉴의 `Tables > Table`을 클릭합니다. `Create Table` 창이 표시되면 `My table has headers` 옵션을 선택하고 `OK`를 클릭합니다.
 
     ![Excel에서 A1:F5 범위를 선택하고 Insert 메뉴로 머리글이 있는 테이블 만들기](./images/04-workflow-tools/exercise-03-task-01-step-05-create-table-with-headers.png)
 
@@ -310,7 +299,7 @@ Copilot이 에이전트를 만들 때 생성하는 지침은 일정하지 않으
 
     ![Excel Table Design 메뉴에서 테이블 이름을 tblTasks로 변경](./images/04-workflow-tools/exercise-03-task-01-step-06-name-tbltasks-table.png)
 
-7. Excel 웹을 닫고 OneDrive로 이동한 후 `My files`를 선택합니다. 새로 만든 `Operations Tasks.xlsx` 파일이 표시되는지 확인합니다.
+7. 변경 내용이 저장된 것을 확인한 후 Excel 웹을 닫고 OneDrive의 `My files`로 돌아갑니다. 업로드한 `Operations Tasks.xlsx` 파일이 표시되는지 확인합니다.
 
     ![OneDrive My files에서 Operations Tasks.xlsx 파일이 저장된 상태 확인](./images/04-workflow-tools/exercise-03-task-01-step-07-verify-workbook-in-onedrive.png)
 
