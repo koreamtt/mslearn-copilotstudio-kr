@@ -279,7 +279,7 @@ Copilot이 에이전트를 만들 때 생성하는 지침은 일정하지 않으
 
 ### E03.TASK 01. Excel 파일 업로드 및 테이블 구성
 
-1. [작업 목록 Excel 파일(Operations Taks.xlsx)](./files/Operations%20Taks.xlsx)을 로컬 컴퓨터에 다운로드합니다. 파일에는 실습에 사용할 작업 데이터가 입력되어 있습니다.
+1. [작업 목록 Excel 파일(Operations Taks.xlsx)](./files/Operations%20Taks.xlsx)을 로컬 컴퓨터에 다운로드합니다. 파일에는 실습에 사용할 작업 데이터가 입력되어 있습니다. 어떤 데이터가 들어 있는 검토하시고, 특히 "우선 순위" 컬럼을 잘 봐두시기 바랍니다.
 
 2. Copilot Studio의 왼쪽 상단에서 앱 시작 관리자 아이콘을 클릭한 후 `OneDrive`를 선택합니다. 실습 계정의 OneDrive가 열렸는지 확인하고 `My files`로 이동합니다.
 
@@ -348,11 +348,10 @@ Copilot이 에이전트를 만들 때 생성하는 지침은 일정하지 않으
 
     | 항목 | 값 |
     |---|---|
-    | 작업 종류 | `Excel Online(Business) > 테이블에 있는 행 나열` |
-    | 작업 이름 | `ListTaskRows` |
     | 위치 | `OneDrive for Business` |
     | 문서 라이브러리 | `OneDrive` |
     | 파일 | `폴더 열기`를 클릭한 후 `Operations Tasks.xlsx` 파일 선택 |
+    | 작업 종류 | `Excel Online(Business) > 테이블에 있는 행 나열` |
     | 테이블 | `tblTasks` |
 
     ![ListTaskRows에서 OneDrive for Business의 Operations Tasks.xlsx 파일과 tblTasks 테이블 지정](./images/04-workflow-tools/exercise-03-task-02-step-08-configure-listtaskrows-workbook-table.png)
