@@ -148,7 +148,7 @@ https://copilotstudio.microsoft.com
 
 3. 생성된 에이전트의 `구성`에서 이름, 설명, 지침에 요청한 내용이 반영되었는지 확인합니다.
 
-4. Agent Builder에 방금 만든 에이전트의 오른쪽 위에 `… `을 클릭, `Copilot Studio에 복사`를 선택, `시작`을 클릭합니다.
+4. Agent Builder에 방금 만든 에이전트의 오른쪽 위에 `… `을 클릭, `Copilot Studio에 복사`를 선택, `시작`을 클릭하고, 현재 작업중인 솔루션을 선택하고 Copilot Studio로 전환합니다.
 
 5. Copilot Studio의 에이전트 생성 화면으로 전환, 에이전트가 열리면 **아직 `만들기`를 클릭하지 말고**, 오른쪽 위의 `…` 메뉴에서 언어와 고급 설정을 확인합니다.
 
